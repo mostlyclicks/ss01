@@ -23,19 +23,23 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#home-main">HOME</a></li>
-        <li><a href="#home-about">ABOUT</a></li>
-        <li><a href="#home-what-we-do">WHAT WE DO</a></li>
-        <li><a href="#home-our-athletes">OUR ATHLETES</a></li>
-        <li><a href="#home-the-team">THE TEAM</a></li>
-        <li><a href="#home-blog">BLOG</a></li>
-        <li><a href="#home-videos">VIDEOS</a></li>
-        <li><a href="#home-contact">CONTACT</a></li>
-      </ul>
-      <%# presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self) %>
-      <%# presenter.max_depth = 1 %>
-      <%#= presenter.to_html %>
+      <% if @page.slug == 'home' %>
+        <ul class="nav navbar-nav">
+          <li><a href="#home-main">HOME</a></li>
+          <li><a href="#home-about">ABOUT</a></li>
+          <li><a href="#home-what-we-do">WHAT WE DO</a></li>
+          <li><a href="#home-our-athletes">OUR ATHLETES</a></li>
+          <li><a href="#home-the-team">THE TEAM</a></li>
+          <li><a href="#home-blog">BLOG</a></li>
+          <li><a href="#home-videos">VIDEOS</a></li>
+          <li><a href="#home-contact">CONTACT</a></li>
+        </ul>
+      <% else %>
+        <% presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self) %>
+        <% presenter.max_depth = 1 %>
+        <%= presenter.to_html %>
+      <% end %>
+
     </div>
   </div>
 </nav>
