@@ -1,7 +1,17 @@
 @import 'bs-overrides';
 
+.navbar {
+  width:100%;
+}
+
 .navbar-brand {
   img {
     margin-top:-30px;
   }
+
+}
+
+section {
+  min-height:350px;
+  border-bottom:1px solid rgba(0,0,0,.1);
 }

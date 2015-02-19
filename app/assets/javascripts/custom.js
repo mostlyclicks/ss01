@@ -12,3 +12,9 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+//STICKY NAV
+$(document).ready(function(){
+    $(".navbar").sticky({topSpacing:0});
+});
