@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Lag en ny Athlete
+            reorder: Endre rekkefølgen på Athletes
+            reorder_done: Ferdig å endre rekkefølgen Athletes
+          records:
+            title: Athletes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Athletes enda. Klikk på "Lag en ny Athlete" for å legge til din første athlete.
+          athlete:
+            view_live_html: Vis hvordan denne athlete ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne athlete
+            delete: Fjern denne athlete permanent
+      athletes:
+        show:
+          other: Andre Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

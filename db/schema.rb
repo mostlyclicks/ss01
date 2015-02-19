@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150218171351) do
+ActiveRecord::Schema.define(:version => 20150219171124) do
+
+  create_table "refinery_athletes", :force => true do |t|
+    t.string   "name"
+    t.integer  "athlete_image_id"
+    t.string   "nationality"
+    t.string   "club_team"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"

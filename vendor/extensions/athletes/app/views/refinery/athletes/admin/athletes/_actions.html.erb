@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Athletes::Admin::AthletesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.athletes_admin_athletes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_athletes_admin_athlete_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Athletes::Admin::AthletesController.sortable? && ::Refinery::Athletes::Athlete.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Athletes"),
+                 refinery.athletes_admin_athletes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Athletes"),
+                 refinery.athletes_admin_athletes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

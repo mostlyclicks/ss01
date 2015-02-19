@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Aggiungi Nuovo Athlete
+            reorder: Riordina Athletes
+            reorder_done: Termina il Riordino di Athletes
+          records:
+            title: Athletes
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Athletes. Clicca "Aggiungi Nuovo Athlete" per aggiungere il tuo primo athlete.
+          athlete:
+            view_live_html: Guarda live questo athlete <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo athlete
+            delete: Rimuovi per sempre questo athlete
+      athletes:
+        show:
+          other: Altri Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

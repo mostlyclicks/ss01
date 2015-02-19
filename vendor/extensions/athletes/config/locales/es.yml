@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+#        article: masculino/femenino
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Crear nuevo athlete
+            reorder: Reordenar athletes
+            reorder_done: Reordenación de athletes completada
+          records:
+            title: Athletes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay athletes todavía. Pulsa en "Crear nuevo Athlete" para crear tu primer athlete.
+          athlete:
+            view_live_html: Ver este athlete como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este athlete
+            delete: Borrar este athlete para siempre
+      athletes:
+        show:
+          other: Otros athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

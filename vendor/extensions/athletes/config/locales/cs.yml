@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Přidat Athlete
+            reorder: Řadit Athletes
+            reorder_done: Konec řazení Athletes
+          records:
+            title: Athletes
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Athletes. Zvolte "Přidat Athlete" pro přidání prvního athlete.
+          athlete:
+            view_live_html: Zobrazit náhled athlete<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit athlete
+            delete: Smazat athlete
+      athletes:
+        show:
+          other: Další Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

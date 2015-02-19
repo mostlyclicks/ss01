@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Yeni Ekle Athlete
+            reorder: Tekrar sirala Athletes
+            reorder_done: Tekrar siralama tamamlandiAthletes
+          records:
+            title: Athletes
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Athletes yok henuz.  Tikla "Yeni Ekle Athlete" eklemek senin ilk athlete.
+          athlete:
+            view_live_html: Bunu canlu athlete goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle athlete
+            delete: Bunu Sil athlete sonsuza dek
+      athletes:
+        show:
+          other: Diger Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

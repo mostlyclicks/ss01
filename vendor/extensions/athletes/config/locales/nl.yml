@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Nieuwe Athlete toevoegen
+            reorder: De volgorde van de Athletes wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Athlete-volgorde
+          records:
+            title: Athletes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Athletes. Druk op 'Nieuwe Athlete toevoegen' om de eerste toe te voegen.
+          athlete:
+            view_live_html: Deze athlete op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze athlete
+            delete: Deze athlete definitief verwijderen
+      athletes:
+        show:
+          other: Andere Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description

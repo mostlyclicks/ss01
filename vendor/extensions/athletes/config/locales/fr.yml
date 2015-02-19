@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      athletes:
+        title: Athletes
+    athletes:
+      admin:
+        athletes:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Athlete
+            reorder: Réordonner les Athletes
+            reorder_done: Fin de réordonnancement des Athletes
+          records:
+            title: Athletes
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Athlete. Cliquer sur "Créer un(e) nouve(au/l/lle) Athlete" pour créer votre premi(er/ère) athlete.'
+          athlete:
+            view_live_html: Voir ce(t/tte) athlete <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) athlete
+            delete: Supprimer définitivement ce(t/tte) athlete
+      athletes:
+        show:
+          other: Autres Athletes
+  activerecord:
+    attributes:
+      'refinery/athletes/athlete':
+        name: Name
+        athlete_image: Athlete Image
+        nationality: Nationality
+        club_team: Club Team
+        description: Description
