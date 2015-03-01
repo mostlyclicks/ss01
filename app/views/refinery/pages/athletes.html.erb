@@ -1,0 +1,27 @@
+<section id="athletes-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Our Athletes</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="athletes-list">
+  <div class="container">
+    <% @athletes.each do |a| %>
+      <div class="row">
+        <div class="col-md-6">
+          <h1><%= a.name %></h1>
+          <p>
+            <strong>Nationality: </strong><%= a.nationality %><br />
+            <strong>Specialty: </strong><%= a.specialty %><br />
+            <strong>Club team: </strong><%= a.club_team %><br />
+          </p>
+          <p><%= a.description.html_safe %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

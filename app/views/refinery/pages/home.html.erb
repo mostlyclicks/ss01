@@ -10,7 +10,19 @@
   <h1>What We Do</h1>
 </section>
 <section id="home-our-athletes">
-  <h1>Our Athletes</h1>
+  <h1 class="text-center">Our Athletes</h1>
+  <div class="container">
+    <div class="row">
+      <% @home_athletes.each do |ha| %>
+        <div class="col-md-4 text-center">
+          <%= image_tag 'http://placehold.it/450x450', class: 'img-responsive' %>
+          <h2><%= link_to ha.name,  '/athletes' %></h2>
+
+        </div>
+      <% end %>
+    </div>
+  </div>
+
 </section>
 <section id="home-the-team">
   <h1>The Team</h1>

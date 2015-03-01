@@ -3,7 +3,7 @@ module Refinery
     class Athlete < Refinery::Core::BaseModel
       self.table_name = 'refinery_athletes'
 
-      attr_accessible :name, :athlete_image_id, :nationality, :club_team, :description, :position
+      attr_accessible :name, :athlete_image_id, :specialty, :nationality, :club_team, :description, :position
 
       validates :name, :presence => true, :uniqueness => true
 
