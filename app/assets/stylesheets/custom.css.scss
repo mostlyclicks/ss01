@@ -21,6 +21,8 @@ section {
   border-bottom:1px solid rgba(0,0,0,.1);
 }
 
+//HOME PAGE
+
 #home-main {
   min-height:480px;
   padding-bottom:80px;
@@ -33,19 +35,32 @@ section {
     color:#fff;
     text-shadow:1px 1px 1px rgba(0,0,0,.5);
     padding-top:2em;
-    margin:0;
     text-align:center;
+    margin-bottom:20px;
   }
   h3 {
     padding:1.25em 2em 1em 2em;
     text-align:center;
     color:$ss-hi-vis;
     text-shadow:1px 1px 1px rgba(0,0,0,1);
-
     background-color:darken($ss-blue, 10%);
   }
   a {
     margin-top:40px;
+  }
+}
+
+#home-about {
+
+  padding:80px 20px;
+  background-color:lighten($ss-blue, 20%);
+  h1 {
+    color:rgba(255,255,255,.7);
+    text-transform: uppercase;
+  }
+  p {
+    color:rgba(255,255,255,.9);
+    font-size:18px;
   }
 }
 
