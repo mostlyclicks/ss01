@@ -2,7 +2,17 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   #home-main {
+
     h1 {font-size:82px;margin-bottom:30px;}
+  }
+  #home-what-we-do {
+    background-position-x:50%;
+    background-size:cover;
+    h1 {
+      padding-top:0px;
+      text-align:left;
+    }
+
   }
 }/* END OF SMALL DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
 

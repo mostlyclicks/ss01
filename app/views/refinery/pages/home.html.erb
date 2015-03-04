@@ -15,11 +15,11 @@
       <div class="col-md-5">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
       </div>
@@ -30,22 +30,43 @@
 </section>
 
 <section id="home-what-we-do">
-  <h1>What We Do</h1>
-</section>
-
-<section id="home-our-athletes">
-  <h1 class="text-center">Our Athletes</h1>
+  
   <div class="container">
     <div class="row">
-      <% @home_athletes.each do |ha| %>
-        <div class="col-md-4 text-center">
-          <%= image_tag 'http://placehold.it/450x450', class: 'img-responsive' %>
-          <h2><%= link_to ha.name,  '/athletes' %></h2>
-        </div>
-      <% end %>
+      <div class="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8">
+        <h1>What We Do</h1>
+        <ul>
+          <li>RESEARCH-FOCUSED</li>
+          <li>INNOVATIVE SWIMMING-APPROPRIATE EXERCISES</li>
+          <li>INDIVIDUAL ONLINE COACHING</li>
+          <li>ONLINE CONFERENCES</li>
+        </ul>
+        
+
+        
+
+        
+
+        
+
+      </div>
     </div>
   </div>
 </section>
+
+<!-- <section id="home-our-athletes">
+  <h1 class="text-center">Our Athletes</h1>
+  <div class="container">
+    <div class="row">
+      <%# @home_athletes.each do |ha| %>
+        <div class="col-md-4 text-center">
+          <%#= image_tag 'http://placehold.it/450x450', class: 'img-responsive' %>
+          <h2><%#= link_to ha.name,  '/athletes' %></h2>
+        </div>
+      <%# end %>
+    </div>
+  </div>
+</section> -->
 
 <section id="home-the-team">
   <h1>The Team</h1>

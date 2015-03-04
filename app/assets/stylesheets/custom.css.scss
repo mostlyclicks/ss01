@@ -53,6 +53,9 @@ section {
 #home-about {
 
   padding:80px 20px;
+  background-image:url(poolart-02-01.png);
+  background-size:cover;
+  background-position-y:90%;
   background-color:lighten($ss-blue, 20%);
   h1 {
     color:rgba(255,255,255,.7);
@@ -62,6 +65,34 @@ section {
     color:rgba(255,255,255,.9);
     font-size:18px;
   }
+}
+
+#home-what-we-do {
+  padding:80px 20px;
+  background-image:url(weight.jpg);
+  background-size:cover;
+  min-height:800px;
+  background-position-x:-200px;
+    h1 {
+    padding-top:250px;
+    text-align:center;
+    color:rgba(255,255,255,.7);
+    text-transform: uppercase;
+  }
+  ul {
+
+    list-style:none;
+    padding-left:0;
+    text-indent:0;
+
+  }
+    li {
+      background-color:rgba(0,0,0,.4);
+      padding:20px;
+      margin-bottom:5px;
+      font-size:130%;
+      color:#fff;
+    }
 }
 
 #home-our-athletes {
