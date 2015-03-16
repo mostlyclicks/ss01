@@ -100,7 +100,17 @@
 </section>
 
 <section id="home-blog">
-  <h1>Blog</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+          <% @home_blog.each do |blog| %>
+            <h1><%= blog.title %></h1>
+            <p><%= blog.custom_teaser.html_safe %></p>
+            <%= link_to 'Read more', blog_post_path(blog), class: 'btn btn-warning' %>
+          <% end %>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="home-videos">
