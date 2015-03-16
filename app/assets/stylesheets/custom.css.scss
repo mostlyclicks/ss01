@@ -100,3 +100,24 @@ section {
   h2 {margin-bottom:80px;}
   img {margin:0 auto;}
 }
+
+#home-the-team {
+  padding:60px 20px;
+  text-align:center;
+  .team {
+
+    h3 {
+      margin-top:.75em;
+      text-align:center;
+
+    }
+    
+    img {
+      border-radius:50%;
+      margin:20px auto;
+    }
+  }
+
+}
+
+

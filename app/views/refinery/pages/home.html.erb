@@ -69,7 +69,34 @@
 </section> -->
 
 <section id="home-the-team">
-  <h1>The Team</h1>
+  
+  <div class="container">
+    <div class="row">
+      <h1>The Team</h1>
+      <div class="col-md-3 team">
+        <%= image_tag 'about-Deniz-Hekmati.jpg', class: 'img-responsive' %>
+        <h3><%= link_to 'Deniz Hekmati', '/the-team#deniz' %></h3>
+      </div>
+      <div class="col-md-3 team">
+        <%= image_tag 'abot-Alex-Coci.jpg', class: 'img-responsive' %>
+        <h3><%= link_to 'Alex Coci', '/the-team#alex' %></h3>
+
+      </div>
+      <div class="col-md-3 team">
+        <%= image_tag 'about-Jesper-Akesson.jpg', class: 'img-responsive' %>
+        <h3><%= link_to 'Jesper Akesson', '/the-team#jesper' %></h3>
+
+      </div>
+      <div class="col-md-3 team">
+        <%= image_tag 'bjorn-gunnarsson.jpg', class: 'img-responsive' %>
+        <h3><%= link_to 'Bjorn Gunnarsson', '/the-team#bjorn' %></h3>
+
+      </div>
+    </div>
+  </div>
+
+
+
 </section>
 
 <section id="home-blog">
