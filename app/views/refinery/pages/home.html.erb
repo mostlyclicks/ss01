@@ -14,12 +14,7 @@
       </div>
       <div class="col-md-5">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="lead">Whether you’re a youth or seasoned swimmer, we start with an online consultation to understand your goals, strengths and weaknesses. We recognize that no two swimmers are alike and tailor specific training goals and techniques just for you.</p>
 
 
       </div>
@@ -114,7 +109,42 @@
 </section>
 
 <section id="home-videos">
-  <h1>Videos</h1>
+  <div class="container">
+    <div class="row">
+      <%# @home_video_hero.each do |v| %>
+      <div class="col-md-3">
+        <h1>Videos</h1>
+          <h2><%= @home_video_hero.title %></h2>
+          <p><%= @home_video_hero.description.html_safe %></p>
+      </div>
+        <div class="col-md-9">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= @home_video_hero.embed_url %>"></iframe>
+          </div>
+        </div>
+      <%# end %>
+    </div>
+    <div class="row home-video-sub">
+      <% @home_videos.each do |hv| %>
+      <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= hv.embed_url %>"></iframe>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <%= link_to 'SEE MORE VIDEOS', '/videos', class: 'btn btn-lg btn-primary' %>
+      </div>
+      
+    </div>
+
+
+
+
+
+  </div>
 </section>
 
 <section id="home-contact">

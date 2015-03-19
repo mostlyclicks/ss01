@@ -1,0 +1,35 @@
+<%= form_for [refinery, :videos_admin, @video] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @video,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :embed_url -%>
+    <%= f.text_field :embed_url -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "videos/video" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.videos.admin.videos.video'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @video.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -124,4 +124,15 @@ section {
   background-color:lighten($ss-blue, 45%);
 }
 
+#home-videos {
+  color:lighten($ss-blue, 30%);
+  background-color:darken($ss-blue, 25%);
+  padding:80px 20px;
+  .home-video-sub {
+    padding:40px 0px;
+    div div {margin-bottom:40px;}
+  }
+}
+
+
 

@@ -34,3 +34,5 @@ gem 'refinerycms-blog', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-athletes', :path => 'vendor/extensions'
+
+gem 'refinerycms-videos', :path => 'vendor/extensions'
