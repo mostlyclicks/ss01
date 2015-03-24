@@ -26,4 +26,8 @@ class ApplicationController < ActionController::Base
     @home_videos = Refinery::Videos::Video.limit(3).offset(1)
   end
 
+  def load_videos
+    @videos = Refinery::Videos::Video.all
+  end
+
 end

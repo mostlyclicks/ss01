@@ -1,1 +1,32 @@
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>
+<% if @page.images %>
+  <% @page.images.each do |i| %>
+    <% @bg_image = i.url %>
+  <% end %>
+<% end %>
+
+<style>
+  #show-header {
+    background-image:url(<%= @bg_image %>);
+  }
+</style>
+
+<section id="show-header">
+
+  <%= @page.content_for(:headline).html_safe unless @page.content_for(:headline).blank? %>
+  <%= @page.content_for(:subheadline).html_safe  unless @page.content_for(:subheadline).blank? %>
+</section>
+
+<section id="show-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <%= @page.content_for(:body).html_safe %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+

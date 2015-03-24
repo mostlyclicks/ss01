@@ -1,8 +1,8 @@
 @import 'bs-overrides';
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  
   #home-main {
-
     h1 {font-size:82px;margin-bottom:30px;}
   }
   #home-what-we-do {
@@ -14,10 +14,21 @@
     }
 
   }
+
+  #show-header {
+    margin-top:-86px;
+    padding-top:100px;
+  h2 {
+    font-size: 32px;
+    padding:20px 100px;
+    font-weight: 700;
+  }
+}
 }/* END OF SMALL DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
     #home-main {
     h1 {font-size:96px;}
   }
@@ -26,5 +37,6 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
 
 }
