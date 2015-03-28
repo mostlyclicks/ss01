@@ -1,12 +1,13 @@
 <section id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 text-left" >
+      <div class="col-md-8 col-sm-12 text-left" >
         <% presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self) %>
+        <% presenter.css = "footer_menu" %>
         <% presenter.max_depth = 1 %>
         <%= presenter.to_html %>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-12">
         <div class="row"  id="footer-social">
           <ul>
             <li><a href="http://www.linkedin.com/profile/view?id=235375468&trk=nav_responsive_tab_profile"><span class="fa fa-linkedin-square fa-4x"> </span></a></li>

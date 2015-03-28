@@ -182,6 +182,17 @@ section {
   padding:40px 20px 20px 20px;
   background-color:darken($ss-blue, 15%);
   color:rgba(255,255,255,.7);
+  .footer_menu {
+    .navbar-right{
+      float:left !important;
+    }
+    li a {
+      padding:15px 15px;
+      text-transform: uppercase;
+      font-size:1.10em;
+      font-weight:400;
+    }
+  }
     #footer-social {
       text-align: center;
       ul {
