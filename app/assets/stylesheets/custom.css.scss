@@ -178,5 +178,35 @@ section {
   padding:60px 20px;
 }
 
+#footer {
+  padding:40px 20px 20px 20px;
+  background-color:darken($ss-blue, 15%);
+  color:rgba(255,255,255,.7);
+    #footer-social {
+      text-align: center;
+      ul {
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+      }
+      li {
+        list-style:none;
+        margin-left:0px;
+        display:inline-block;
+        margin-right:5px;
+      }  
+    }
+    #memorium {
+      text-align:center;
+      font-family: $cinzel;
+      padding-top:65px;
+      font-size:1.25em;
+    }
+    #copyright {
+      padding-top:80px;
+      color:rgba(255,255,255,.2);
+    }
+}
+
 
 

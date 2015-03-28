@@ -1,4 +1,31 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-left" >
+        <% presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self) %>
+        <% presenter.max_depth = 1 %>
+        <%= presenter.to_html %>
+      </div>
+      <div class="col-md-4">
+        <div class="row"  id="footer-social">
+          <ul>
+            <li><a href="http://www.linkedin.com/profile/view?id=235375468&trk=nav_responsive_tab_profile"><span class="fa fa-linkedin-square fa-4x"> </span></a></li>
+            <li><a href="https://www.facebook.com/swimmerstrength"><span class="fa fa-facebook-square fa-4x"> </span></a></li>
+            <li><a href="https://twitter.com/swimmerstrength"><span class="fa fa-twitter-square fa-4x"> </span></a></li>
+            <li><a href="http://www.youtube.com/channel/UCalvF4I1-VnJ-WDtHunv-Vw?feature=watch"><span class="fa fa-youtube-square fa-4x"> </span></a></li>
+          </ul>
+        </div>
+        <div class="row" id="memorium">
+          &mdash; In Memory of Nejla Hekmati &mdash;
+
+        </div>
+        <div class="row">
+          <p class="text-center" id="copyright"><%= t('.copyright', :year => Time.now.year,
+                                              :site_name => Refinery::Core.site_name) %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
