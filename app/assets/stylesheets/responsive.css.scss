@@ -23,20 +23,33 @@
     padding:20px 100px;
     font-weight: 700;
   }
+
+
 }
 }/* END OF SMALL DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    #home-main {
+  #home-main {
     h1 {font-size:96px;}
+  }
+
+  #swimmers-edge-programs {
+    blockquote {
+      min-height: 38em;
+    }
   }
 
 }/* END OF MEDIUM DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #swimmers-edge-programs {
+    blockquote {
+      min-height: 29em;
+    }
+  }
 
 
 }

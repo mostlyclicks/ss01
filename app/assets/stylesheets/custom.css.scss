@@ -137,6 +137,37 @@ section {
   }
 }
 
+#swimmers-edge-programs {
+  background-image:url(sep-GOPR0852.jpg);
+  background-position-x:50%;
+  background-size:cover;
+  h1 {
+    text-transform:uppercase;
+    padding-bottom:.5em;
+    color:rgba(65,104,136,.9);
+  }
+  h2 {
+    color:lighten($ss-blue, 30%);
+  }
+  small {
+    color:lighten($ss-blue, 40%);
+    text-transform:uppercase;
+  }
+  padding:100px 20px;
+  blockquote {
+    margin-top:20px;
+    background-color:rgba(65,104,136,.7);
+    color:rgba(255,255,255,.7);
+    border:1px solid rgba(0,0,0,.2);
+    min-height:auto;
+    border-radius:10px;
+  }
+  .btn {
+    margin-bottom:60px;
+  }
+
+}
+
 
 #show-header {
   margin-top:-100px;
