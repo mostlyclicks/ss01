@@ -1,10 +1,28 @@
 
 <%#= render '/refinery/content_page' %>
 
+<a id="email-sub" href="#home-contact" class="hidden-xs scroll-btn"></a>
+
 <section id="home-main" class="text-center">
   <h1>SWIMMER STRENGTH</h1>
   <h3>Operated by world-renowned swimmers, for swimmers</h3>
   <%= link_to 'Learn more...', '#home-about', class: 'btn btn-primary btn-lg' %>
+</section>
+
+<section id="email-sub-xs" class="visible-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5">
+        <%= image_tag 'dive-in-at.jpg', class: 'img-responsive text-right' %>
+      </div>
+      <div class="col-xs-7">
+        <h1>DIVE IN!</h1>
+        <p><%= link_to 'Sign up for our newsletter!', '#home-contact', class: 'scroll-btn' %></p>
+      </div>
+    </div>
+  </div>
+  
+
 </section>
 
 <section id="home-about">
@@ -25,6 +43,7 @@
           <li data-target="#about-quotes-carousel" data-slide-to="0" class="active"></li>
           <li data-target="#about-quotes-carousel" data-slide-to="1"></li>
           <li data-target="#about-quotes-carousel" data-slide-to="2"></li>
+          <li data-target="#about-quotes-carousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->

@@ -50,6 +50,33 @@ section {
   }
 }
 
+#email-sub {
+ position: fixed;
+ top:190px;
+ right:-40px;
+ width:175px;
+ height:208px;
+ z-index:10000;
+ background-image:url(signupbug.png);
+ /*border:1px solid rgba(0,0,0,.1);*/
+}
+
+#email-sub-xs {
+  min-height:100px !important;
+  padding:20px;
+  background-color:#7da5bb;
+  // background-image:url(signupbug.png);
+  color:darken($ss-blue, 10%);
+  img {float:right;}
+  h1 {
+    margin-top:20px;
+  }
+
+
+}
+
+
+
 #home-about {
 
   padding:80px 20px;
