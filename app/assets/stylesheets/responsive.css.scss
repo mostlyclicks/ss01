@@ -15,6 +15,19 @@
 
   }
 
+  #home-about {
+    blockquote {
+    padding:20px 50px;
+    min-height:15em;
+    border-left:none;
+    border-top:1px solid rgba(255,255,255,.7);
+    color:#fff;
+    font-style: italic;
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {margin-left:-60px;}
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {margin-right:-60px;}
+  }
+
   #show-header {
     margin-top:-86px;
     padding-top:100px;

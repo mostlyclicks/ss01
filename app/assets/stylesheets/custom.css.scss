@@ -57,14 +57,26 @@ section {
   background-size:cover;
   background-position-y:90%;
   background-color:lighten($ss-blue, 20%);
-  h1 {
+  h1, h2 {
     color:rgba(255,255,255,.7);
     text-transform: uppercase;
   }
+  h2 {color:rgba(255,255,255,.3);}
   p {
     color:rgba(255,255,255,.9);
-    font-size:18px;
+    font-size:20px;
   }
+  #about-quotes-carousel {margin-top:60px;}
+  blockquote {
+    padding:20px 30px;
+    min-height:35em;
+    border-left:none;
+    border-top:1px solid rgba(255,255,255,.7);
+    color:#fff;
+    font-style: italic;
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {margin-left:-40px;}
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {margin-right:-40px;}
 }
 
 #home-what-we-do {
