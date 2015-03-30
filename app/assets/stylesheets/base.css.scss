@@ -4,6 +4,7 @@ $cinzel:'Cinzel', serif;
 
 $ss-blue:#416888;
 $ss-hi-vis:#97fe02;
+$ss-hi-vis-orange:#fe9705;
 
 body {font-family:$raleway;}
 h1 {font-family:$oswald;font-weight:bold;font-size:56px;margin:0;}
@@ -14,3 +15,6 @@ h3 {font-family:$oswald;font-weight:normal;margin:0;}
 $nav-link-padding:10px 10px;
 
 .carousel-control.left, .carousel-control.right {background:none;}
+.carousel-inner {
+  -webkit-transform-style: preserve-3d;
+}

@@ -91,20 +91,32 @@ section {
     color:rgba(255,255,255,.7);
     text-transform: uppercase;
   }
-  ul {
 
-    list-style:none;
-    padding-left:0;
-    text-indent:0;
-
+  .col-md-6 {
+    background-clip: padding-box;
+    border: 2px solid transparent;
+ 
   }
-    li {
-      background-color:rgba(0,0,0,.4);
-      padding:20px;
-      margin-bottom:5px;
-      font-size:130%;
-      color:#fff;
+  .do-boxes {
+    background-color:rgba(0,0,0,.6);
+    margin-bottom:2px;
+    padding:20px;
+    min-height:200px;
+    h3 {
+       color:$ss-hi-vis;
     }
+    p {
+      position:absolute;
+      top:50%;
+      padding:0 0px 20px 0px;
+      margin-top: 1em;
+      color:rgba(255,255,255,.8);
+      span, a {
+        font-weight:bold;
+        color:$ss-hi-vis-orange;
+      }
+    }
+  }
 }
 
 #home-our-athletes {
