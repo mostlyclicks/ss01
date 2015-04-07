@@ -1,0 +1,38 @@
+<div class="container">
+  <aside id="comments">
+  <% if (comments = @post.comments.approved).any? %>
+    <h2><%= t('title', :scope => 'refinery.blog.posts.show.comments') %></h2>  
+    <%= render :partial => "comment", :collection => comments %>
+  <% end %>
+
+  <% if Refinery::Blog::Post.comments_allowed? %>
+
+    <% flash.each do |key, value| %>
+      <div id='flash' class="flash flash_<%= key %>">
+        <%= value %>
+      </div>
+    <% end %>
+
+    <h2><%#= t('add', :scope => 'refinery.blog.posts.show.comments') %>Leave a Comment</h2>
+    <%= form_for [refinery, :blog, @comment], :html => { :class => "form-horizontal" } do |f| %>
+      <%= render "/refinery/admin/error_messages",
+                 :object => f.object,
+                 :include_object_name => true %>
+      <div class='field form-group'>
+        <%= f.label :name, class: 'col-md-1 control-label' %>
+        <div class="col-md-6"><%= f.text_field :name, class: 'form-control' %></div>
+      </div>
+      <div class='field form-group'>
+        <%= f.label :email, class: 'col-md-1 control-label' %>
+        <div class="col-md-6"><%= f.email_field :email, class: 'form-control' %></div>
+      </div>
+      <div class='field message_field form-group'>
+        <%= f.label :message, class: 'col-md-1 control-label' %>
+        <div class="col-md-6"><%= f.text_area :message, :rows => 6, class: "form-control" %></div>
+      </div>
+      <div class='field form-actions form-group'>
+        <div class="col-md-6 col-md-offset-1"><%= f.submit t('submit', :scope => 'refinery.blog.posts.show'), class: 'btn btn-lg' %></div>
+      </div>
+    <% end %>
+  <% end %>
+</aside></div>

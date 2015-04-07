@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150324175162) do
+ActiveRecord::Schema.define(:version => 20150331161528) do
 
   create_table "refinery_athletes", :force => true do |t|
     t.string   "name"
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20150324175162) do
     t.string   "source_url_title"
     t.integer  "access_count",     :default => 0
     t.string   "slug"
+    t.string   "authors"
   end
 
   add_index "refinery_blog_posts", ["access_count"], :name => "index_refinery_blog_posts_on_access_count"

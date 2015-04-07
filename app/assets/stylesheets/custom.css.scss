@@ -302,5 +302,38 @@ section {
     }
 }
 
+#blog_post {
+  h1 {color:$ss-blue;}
+  padding-top:80px;
+  .details {
+    min-height:65px;
+    border-top:1px solid lighten($ss-blue, 50%);
+    border-bottom:none;
+    padding:20px 0px;
+  }
+}
+ #comments {
+  h2 {margin-bottom:20px;color:lighten($ss-blue, 50%);}
+   border-top:1px solid lighten($ss-blue, 50%);
+   margin-top:30px;
+   padding-top:30px;
+   padding-bottom:40px;
+ }
 
+#blog-side-bar {
+margin-top:100px;
+h2 {color:rgba(65,104,136, .5);}
+
+ #blog_posts {
+  
+   margin:0px;
+   padding:0px;
+   margin-bottom:40px;
+   li {
+    line-height:1.55em;
+    font-size:1.25em;
+   }
+ }
+
+}
 
