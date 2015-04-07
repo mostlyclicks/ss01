@@ -3,7 +3,7 @@
   <ul id="blog_posts">
     <% @posts.each do |blog_post| %>
       <li class='clearfix'>
-        <%= link_to blog_post.title, refinery.blog_post_path(blog_post) %> - <%= blog_post.created_at.strftime("%m/%d/%Y") %>
+        <%= link_to blog_post.title, refinery.blog_post_path(blog_post) %> - <%= blog_post.published_at.strftime("%m/%d/%Y") %>
       </li>
     <% end %>
   </ul>
