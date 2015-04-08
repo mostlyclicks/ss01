@@ -18,3 +18,9 @@ $(function() {
 $(document).ready(function(){
     $(".navbar").sticky({topSpacing:0});
 });
+
+
+//Add TWBS img-responsive class to all blog images
+$(document).ready(function(){
+  $("#blog-left img").addClass("img-responsive");
+});
