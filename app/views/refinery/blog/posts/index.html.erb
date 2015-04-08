@@ -1,20 +1,40 @@
+
+
 <% content_for :body do %>
   <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
 
   <% if @posts.any? %>
-    <section id="blog_posts">
+    <div id="blog_posts">
       <%= render :partial => "/refinery/blog/shared/post", :collection => @posts %>
       <%= will_paginate @posts %>
-    </section>
+    </div>
   <% else %>
     <p><%= t('.no_blog_articles_yet') %></p>
   <% end %>
 <% end %>
 
-<% content_for :side_body_prepend do -%>
-  <%= raw @page.content_for(Refinery::Pages.default_parts.second.to_sym) %>
-<% end if Refinery::Pages.default_parts.many? -%>
-<%= render '/refinery/blog/shared/body_content_right' %>
 
-<%= render "/refinery/content_page" %>
+
+      <% content_for :side_body_prepend do -%>
+        <%= raw @page.content_for(Refinery::Pages.default_parts.second.to_sym) %>
+      <% end if Refinery::Pages.default_parts.many? -%>
+      
+
+<section id="post-show">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <%= render "/refinery/content_page" %>
+      </div>
+      <div class="col-md-4" id="blog-side-bar">
+        <%#= render '/refinery/blog/shared/body_content_right' %>
+          <%#= render "/refinery/blog/shared/rss_feed" %>
+    <%= render "/refinery/blog/shared/categories" %>
+    <%= render "/refinery/blog/shared/tags" %>
+    <%= render "/refinery/blog/shared/posts" %>
+    <%= blog_archive_widget %>
+      </div>
+    </div>
+  </div>
+</section>
 <% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>

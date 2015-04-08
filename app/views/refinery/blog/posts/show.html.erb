@@ -16,14 +16,14 @@
     </div>
     <div class="col-md-4" id="blog-side-bar">
       <%#= render '/refinery/blog/shared/body_content_right' %>
-        <%= yield(:side_body_prepend) %>
-  <%= render "/refinery/blog/shared/posts" %>
-  <%= blog_archive_widget %>
-  <%= render "/refinery/blog/shared/rss_feed" %>
-  <%= render "/refinery/blog/shared/categories" %>
-  <%= render "/refinery/blog/shared/tags" %>
-  
-  <%= yield(:side_body_append) %>
+      <%= yield(:side_body_prepend) %>
+      <%= render "/refinery/blog/shared/posts" %>
+      <%= blog_archive_widget %>
+      <%#= render "/refinery/blog/shared/rss_feed" %>
+      <%= render "/refinery/blog/shared/categories" %>
+      <%= render "/refinery/blog/shared/tags" %>
+      
+      <%= yield(:side_body_append) %>
 
     </div>
     
