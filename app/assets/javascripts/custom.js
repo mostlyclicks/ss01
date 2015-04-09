@@ -28,4 +28,10 @@ $(document).ready(function(){
 //Tooltip
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip()
+});
+
+$(document).ready(function () {
+  $('.carousel').carousel({
+  interval: 15000
 })
+});
