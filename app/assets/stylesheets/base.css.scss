@@ -13,8 +13,14 @@ h3 {font-family:$oswald;font-weight:normal;margin:0;}
 
 // BS overrides
 $nav-link-padding:10px 10px;
+$alert-padding:20px;
+$alert-border-radius:0px;
+$state-success-bg:$ss-hi-vis;
+.alert {margin-bottom:0px;}
 
 .carousel-control.left, .carousel-control.right {background:none;}
 .carousel-inner {
   -webkit-transform-style: preserve-3d;
 }
+
+.tooltip {font-size:16px;padding:30px;}

@@ -24,3 +24,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#blog-left img").addClass("img-responsive");
 });
+
+//Tooltip
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

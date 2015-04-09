@@ -12,6 +12,7 @@ gem 'bootstrap-sass'#, '~> 3.1.1'
 gem "sass", "~> 3.2.19"
 gem 'sass-rails',   '~> 3.2.3'
 gem 'puma'
+gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 
 
 # Gems used only for assets and not required

@@ -1,7 +1,13 @@
 
 <%#= render '/refinery/content_page' %>
 
-<a id="email-sub" href="#home-contact" class="hidden-xs scroll-btn"></a>
+<a id="email-sub" href="#home-contact" class="hidden-xs scroll-btn" data-toggle="tooltip" data-placement="left" title="Understand core engagement and body-line for swimmers with these 3 exercises!"></a>
+<% if flash[:alert] %>
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <%= flash[:alert] %>
+</div>
+<% end %>
 
 <section id="home-main" class="text-center">
   <h1>SWIMMER STRENGTH</h1>
@@ -17,7 +23,9 @@
       </div>
       <div class="col-xs-7">
         <h1>DIVE IN!</h1>
-        <p><%= link_to 'Sign up for our newsletter!', '#home-contact', class: 'scroll-btn' %></p>
+        <p><%= link_to 'Sign up for our newsletter!', '#home-contact', class: 'scroll-btn', :data => {:toggle => 'tooltip', :placement => "bottom", :title => 'Understand core engagement and body-line for swimmers with these 3 exercises!'} %></p>
+
+
       </div>
     </div>
   </div>
@@ -25,11 +33,16 @@
 
 </section>
 
+
+  
+
+
 <section id="home-about">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
         <h1>Swimmer's Strength Approach</h1>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip on left" />Hello</a>
       </div>
       <div class="col-md-9">
         <p class="lead">Whether you’re a youth or seasoned swimmer, we start with an online consultation to understand your goals, strengths and weaknesses. We recognize that no two swimmers are alike and tailor specific training goals and techniques just for you. </p>
@@ -205,21 +218,21 @@
     <div class="row">
       <h1>The Team</h1>
       <div class="col-md-3 team">
-        <%= image_tag 'about-Deniz-Hekmati.jpg', class: 'img-responsive' %>
+        <%#= image_tag 'about-Deniz-Hekmati.jpg', class: 'img-responsive' %>
         <h3><%= link_to 'Deniz Hekmati', '/the-team#deniz' %></h3>
       </div>
       <div class="col-md-3 team">
-        <%= image_tag 'abot-Alex-Coci.jpg', class: 'img-responsive' %>
+        <%#= image_tag 'abot-Alex-Coci.jpg', class: 'img-responsive' %>
         <h3><%= link_to 'Alex Coci', '/the-team#alex' %></h3>
 
       </div>
       <div class="col-md-3 team">
-        <%= image_tag 'about-Jesper-Akesson.jpg', class: 'img-responsive' %>
+        <%#= image_tag 'about-Jesper-Akesson.jpg', class: 'img-responsive' %>
         <h3><%= link_to 'Jesper Akesson', '/the-team#jesper' %></h3>
 
       </div>
       <div class="col-md-3 team">
-        <%= image_tag 'bjorn-gunnarsson.jpg', class: 'img-responsive' %>
+        <%#= image_tag 'bjorn-gunnarsson.jpg', class: 'img-responsive' %>
         <h3><%= link_to 'Bjorn Gunnarsson', '/the-team#bjorn' %></h3>
 
       </div>
@@ -289,11 +302,16 @@
 </section>
 
 <section id="home-contact">
-  <h1>Contact</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3" style="background-color:rgba(255,255,255,.5);padding:20px;border-radius:10px;">
+        <%= render '/emailapi/subscribe' %>
+
+
+      </div>
+    </div>
+  </div>
+
+
 </section>
 
-<script>
-  $(document).ready(function () {
-    $('.showtooltip').tooltip()
-  })
-</script>
