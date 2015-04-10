@@ -179,8 +179,19 @@ section {
 }
 
 #home-blog {
+  h1 {color:darken($ss-blue, 10%);}
   padding:80px 20px;
   background-color:lighten($ss-blue, 45%);
+  min-height:250px;
+  #carousel-blog {
+    min-height:20em;
+    padding:0px 120px;
+    button {text-align:center;display:block;}
+  }
+  .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    top:90%;
+  
+  }
 }
 
 #home-videos {
@@ -223,6 +234,8 @@ section {
   }
 
 }
+
+
 
 
 #show-header {

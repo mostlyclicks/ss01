@@ -233,13 +233,44 @@
 <section id="home-blog">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-          <% @home_blog.each do |blog| %>
-            <h1><%= blog.title %></h1>
-            <p><%= blog.custom_teaser.html_safe %></p>
-            <%= link_to 'Read more', blog_post_path(blog), class: 'btn btn-warning' %>
-          <% end %>
+      <div class="col-md-12 ">
+
+
+  <div id="carousel-blog" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @home_blog.each_with_index do |b, index| %>
+      <li data-target="#carousel-blog" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  
+  <div class="carousel-inner" role="listbox">
+    <% @home_blog.each_with_index do |b, index| %>
+      <div class="item <% if index == 0 %>active<% end %> text-center">
+        <h1 class="text-left"><%= b.title %></h1>
+        <p class="text-left"><%= b.custom_teaser.html_safe %></p>
+        <%= link_to 'Read more', blog_post_path(b), class: 'btn btn-primary btn-lg' %>
       </div>
+    <% end %>
+  </div>
+  
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-blog" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-blog" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+</div>
+
     </div>
   </div>
 </section>
