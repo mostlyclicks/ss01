@@ -179,13 +179,13 @@ section {
 }
 
 #home-blog {
-  h1 {color:darken($ss-blue, 10%);}
+  h1 {color:darken($ss-blue, 10%);font-size:4em;}
   padding:80px 20px;
   background-color:lighten($ss-blue, 45%);
   min-height:250px;
   #carousel-blog {
-    min-height:20em;
-    padding:0px 120px;
+    min-height:25em;
+    padding:40px 120px;
     button {text-align:center;display:block;}
     p {text-align:left;font-size:16px;margin:1em 0;}
   }
