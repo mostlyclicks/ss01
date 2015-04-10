@@ -113,44 +113,27 @@
   
   <div class="container">
     <div class="row">
-      <div class="col-sm-5 col-sm-offset-7 col-md-6 col-md-offset-6">
+      <div class="col-md-12">
         <h1>What We Do</h1>
-<!--         <ul>
-          <li>SWIMMER'S EDGE PROGRAM</li>
-          <li><a href="#" data-toggle="tooltip" title="Coming Soon!" class="showtooltip">ONLINE CONFERENCES</a></li>
-          <li>RESEARCH-FOCUSED</li>
-          <li>EXERCISE &amp; ENTERTAINMENT ARCHIVE</li>
-          <li>INDIVIDUAL ONLINE COACHING</li>
-          
-        </ul> -->
-
-        <div class="row">
-          <div class="col-md-6 do-boxes">
+      </div>
+    </div>
+    <div class="row">
+          <div class="col-md-3 do-boxes"><!-- do-boxes  -->
             <h3>Research-Focused</h3>
             <p>Our blog is a collection of our research on strength training. <br /><span class="fa fa-arrow-right"></span> <%= link_to 'READ MORE', '#home-blog', class: 'scroll-btn'  %></p>
           </div>
-          <div class="col-md-6 do-boxes">
+          <div class="col-md-3 do-boxes">
             <h3>Exercise &amp; Entertainment Library</h3>
             <p>Form is important. You'll see examples and demonstrations of numerous exercises. <br /><span class="fa fa-arrow-right"></span> <%= link_to 'VIEW VIDEOS', '#home-videos', class: 'scroll-btn' %></p>
           </div>
-          <div class="col-md-6 do-boxes">
+          <div class="col-md-3 do-boxes">
             <h3>The Swimmer's Edge Program</h3>
             <p>Flexible 6 to 12 week packages to fit your training goals.<br /><span class="fa fa-arrow-right"></span> <%= link_to 'LEARN MORE' , '#swimmers-edge-programs', class: 'scroll-btn'  %></p>
           </div>
           
-          <div class="col-md-6 do-boxes"><h3>Online Conference</h3>
+          <div class="col-md-3 do-boxes"><h3>Online Conference</h3>
           <p>COMING SOON! Sign up for our newsletter for updates.<br /><span class="fa fa-arrow-right"></span> <%= link_to 'SIGN UP' , '#home-contact', class: 'scroll-btn'  %></p>
         </div>
-        
-
-        
-
-        
-
-        
-
-      </div>
-    </div>
   </div>
 </section>
 
@@ -303,7 +286,7 @@
 <section id="home-contact">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3" style="">
+      <div class="col-md-6 col-md-offset-3 contact-box" style="background-color:rgba(255,255,255,.5);">
         <%= render '/emailapi/subscribe' %>
 
 
