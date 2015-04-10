@@ -182,7 +182,7 @@ section {
   h1 {color:darken($ss-blue, 10%);font-size:4em;}
   padding:80px 20px;
   background-color:lighten($ss-blue, 45%);
-  min-height:250px;
+  min-height:650px;
   #carousel-blog {
     min-height:25em;
     padding:40px 120px;
@@ -190,8 +190,11 @@ section {
     p {text-align:left;font-size:16px;margin:1em 0;}
   }
   .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-    top:90%;
+    top:0%;
   
+  }
+  .carousel-indicators {
+    top:0%;
   }
 }
 
