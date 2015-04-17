@@ -271,6 +271,10 @@ GEM
     refinerycms-images (2.1.5)
       dragonfly (~> 0.9.14)
       refinerycms-core (= 2.1.5)
+    refinerycms-inquiries (2.1.0)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 2.1.0)
+      refinerycms-settings (~> 2.1.0)
     refinerycms-page-images (2.1.0)
       refinerycms-pages (~> 2.1.0)
     refinerycms-pages (2.1.5)
@@ -331,6 +335,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-athletes!
   refinerycms-blog (~> 2.1.0)
+  refinerycms-inquiries (~> 2.1.0)
   refinerycms-page-images (~> 2.1.0)
   refinerycms-videos!
   sass (~> 3.2.19)
