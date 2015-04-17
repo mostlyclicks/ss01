@@ -27,6 +27,7 @@ section {
   min-height:480px;
   padding-bottom:80px;
   background-image:url(home-main-IMG_5100.jpg);
+  background-position:fixed;
   background-size:cover;
   background-position-y:50%;
   margin-top:0px;
@@ -110,10 +111,15 @@ section {
 
 #home-what-we-do {
   padding:80px 20px;
-  background-image:url(weight.jpg);
-  background-size:cover;
-  min-height:800px;
-  background-position-x:-200px;
+  background:url(weight.jpg) 50% 0 fixed;
+  width:100%;
+  // background-size:cover;
+  position:relative;
+
+  // min-height:800px;
+  height:auto;
+  background-repeat:no-repeat;
+  // background-position-x:-200px;
     h1 {
     padding-top:250px;
     padding-bottom:140px;
@@ -221,8 +227,8 @@ section {
 }
 
 #swimmers-edge-programs {
-  background-image:url(sep-GOPR0852.jpg);
-  background-position-x:50%;
+  background:url(sep-GOPR0852.jpg) 50% 0 fixed;
+  // background-position-x:50%;
   background-size:cover;
   h1 {
     text-transform:uppercase;
@@ -397,9 +403,12 @@ h2 {color:rgba(65,104,136, .5);}
   }
   
   padding:80px 20px;
-  background-image:url(untitled-49-Edit-2-2.jpg);
+  background:url(untitled-49-Edit-2-2.jpg) 50% 0 fixed;
+  width:100%;
+  height:auto;
   background-size:cover;
-  background-position-y:50%;
+
+  // background-position-y:50%;
   p {
     font-size:18px;
   }
@@ -411,6 +420,7 @@ h2 {color:rgba(65,104,136, .5);}
 
 #home-contact-2 {
   padding:60px 20px;
+  background-color:lighten($ss-blue, 58%);
 }
 
 
