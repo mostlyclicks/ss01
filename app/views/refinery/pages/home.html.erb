@@ -246,7 +246,7 @@
 
   <!-- Wrapper for slides -->
   
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" style="border:1px solid red;">
     <% @home_blog.each_with_index do |b, index| %>
       <div class="item <% if index == 0 %>active<% end %> text-center">
         <h1 class="text-left"><%= b.title %></h1>
@@ -319,12 +319,19 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3 contact-box" style="background-color:rgba(255,255,255,.5);">
         <%= render '/emailapi/subscribe' %>
-
-
       </div>
-      <div class='inquiries'>
+  </div>
+</section>
+
+
+<section id="home-contact-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class='inquiries'>
+        <h2>Contact Us</h2>
         <%#= render '/refinery/inquiries/inquiries/form', inquiry: @inquiry %>
-        <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+        <%#= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
   
   <div class='inquiries'>
     <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
@@ -333,40 +340,43 @@
                    :object => @inquiry,
                    :include_object_name => true
                  } %>
-      <div class="field">
+      <div class="field form-group">
         <%= f.required_label :name, :class => 'placeholder-fallback' %>
-        <%= f.text_field :name, :class => 'text', :required => 'required',
+        <%= f.text_field :name, :class => 'text form-control', :required => 'required',
           :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
       </div>
-      <div class="field">
+      <div class="field form-group">
         <%= f.required_label :email, :class => 'placeholder-fallback' %>
-        <%= f.email_field :email, :class => 'text email', :required => 'required',
+        <%= f.email_field :email, :class => 'text email form-control', :required => 'required',
           :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
       </div>
 
       <% if Refinery::Inquiries.show_phone_number_field %>
-        <div class="field">
+        <div class="field form-group">
           <%= f.label :phone, :class => 'placeholder-fallback' %>
-          <%= f.text_field :phone, :class => 'text phone',
+          <%= f.text_field :phone, :class => 'text phone form-control',
             :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
         </div>
       <% end %>
 
-      <div class='field message_field'>
-        <%= f.required_label :message, :class => 'placeholder-fallback' %>
-        <%= f.text_area :message, :rows => 8, :required => 'required',
+      <div class='field message_field form-group'>
+        <%= f.required_label :message, :class => 'placeholder-fallback' %><br />
+        <%= f.text_area :message, :rows => 8, :required => 'required', :class => 'form-control',
           :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
       </div>
       <div class="actions">
-        <%= f.submit t('.send') %>
-        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
+        <%#= f.submit t('.send') %>
+        <%= f.submit "Submit", class: 'btn btn-primary btn-lg' %>
+        <%= link_to ' Privacy Policy', "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
       </div>
     <% end %>
   </div>
       </div>
     </div>
-  </div>
 
+      </div>
+    </div>
+  </div>
 
 </section>
 
