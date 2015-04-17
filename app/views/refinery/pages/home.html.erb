@@ -246,7 +246,7 @@
 
   <!-- Wrapper for slides -->
   
-  <div class="carousel-inner" role="listbox" style="border:1px solid red;">
+  <div class="carousel-inner" role="listbox">
     <% @home_blog.each_with_index do |b, index| %>
       <div class="item <% if index == 0 %>active<% end %> text-center">
         <h1 class="text-left"><%= b.title %></h1>
