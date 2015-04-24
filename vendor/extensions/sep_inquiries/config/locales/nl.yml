@@ -1,0 +1,93 @@
+nl:
+  refinery:
+    plugins:
+      sep_inquiries:
+        title: Sep Inquiries
+        description: Contactformulier en beheer van sep inquiries
+    sep_inquiries:
+      sep_inquiries:
+        new:
+          send: Bericht verzenden
+          privacy_policy: Wij respecteren uw privacy
+      admin:
+        sep_inquiries:
+          delete: Deze sep inquiry definitief verwijderen
+          sep_inquiry:
+            read_sep_inquiry: Lees de sep inquiry
+            said: zei
+            mark_as_spam: Als spam markeren
+            mark_as_ham: Naar de inbox verplaatsen
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Wijzigen wie op de hoogte wordt gesteld
+            edit_confirmation_email: Bevestigings-e-mail bewerken
+          index:
+            no_sep_inquiries: U heeft nog geen sep inquiries ontvangen.
+          spam:
+            no_spam: Hoera! U heeft geen spam.
+          show:
+            details: Details
+            age: Leeftijd
+            actions: Acties
+            back_to_all_sep_inquiries: Terug naar alle sep inquiries
+            spam: Spam
+            spam_yes: 'ja'
+            sep_inquiry: Sep Inquiry
+            to: Aan
+            from: Van
+            click_to_email: Klik hier om een e-mail te sturen naar dit adres
+            phone: Telefoonnummer
+            date: Datum
+            message: Bericht
+        settings:
+          notification_recipients_form:
+            settings_value_name: Stuur notificaties naar
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            hint: "Wilt u naar meerdere adressen notificaties sturen? Vul dan meerdere e-mailadressen in gescheiden door komma's"
+            example: "Bijvoorbeeld: jan@werk.nl, els@kantoor.nl"
+          confirmation_email_form:
+            to: Aan
+            from: Van
+            subject: Onderwerp
+            click_to_edit_subject: Klik hier om het onderwerp bewerken
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            below_edit_email_sent: Hieronder kunt u de email die verzonden wordt bewerken.
+            the_customer_making_sep_inquiry: De persoon die de sep inquiry heeft ingezonden
+            message: Bericht
+            note: "N.B.: plaats de tekst %name% overal in de email waar u de naam van de klant persoon wilt invoegen"
+      mailer:
+        notification:
+          greeting: Hallo
+          you_recieved_new_sep_inquiry: U hebt een nieuwe sep inquiry ontvangen via de website.
+          sep_inquiry_starts: --- begin van de sep inquiry ---
+          sep_inquiry_ends: --- einde van de sep inquiry ---
+          from: Van
+          email: E-mail
+          phone: Telefoon
+          message: Bericht
+          closing_line: Met vriendelijke groet,
+          ps_html: P.S. Alle sep inquiries worden opgeslagen in de sectie Sep Inquiries van Refinery.
+  activerecord:
+    models:
+      sep_inquiry: Sep Inquiry
+    attributes:
+      sep_inquiry:
+        first_name: First name
+        last_name: Last name
+        age: Age
+        gender: Gender
+        inquiry_from: Inquiry from
+        phone: Phone
+        email: Email
+        city: City
+        state_province: State province
+        country: Country
+        contact_time_1: Contact time 1
+        contact_time_2: Contact time 2
+        contact_time_3: Contact time 3
+        referral_source: Referral source
+        area_of_focus: Area of focus
+        event_times: Event times
+        athletic_background: Athletic background
+        athletic_vision: Athletic vision

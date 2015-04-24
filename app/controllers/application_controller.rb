@@ -3,7 +3,22 @@ class ApplicationController < ActionController::Base
 
   before_filter :load_athletes, :load_home_athletes, :load_blog_posts, :load_videos_home, :load_more_videos
 
+
   protected
+
+ def create
+    @sep_signup = SepSignup.new(params[:sep_signup])
+
+    respond_to do |format|
+      if @sep_signup.save
+        format.html { redirect_to @sep_signup, notice: 'Sep signup was successfully created.' }
+        format.json { render json: @sep_signup, status: :created, location: @sep_signup }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @sep_signup.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   def load_athletes
     @athletes = Refinery::Athletes::Athlete.all

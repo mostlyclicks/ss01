@@ -1,0 +1,81 @@
+it:
+  refinery:
+    plugins:
+      sep_inquiries:
+        title: Sep Inquiries
+    sep_inquiries:
+      sep_inquiries:
+        new:
+          header_message: "Un problema si è verificato"
+          message: "I seguenti problemi devono essere corretti:"
+          send: Invia messaggio
+          privacy_policy: "Noi diamo valore alla tua privacy"
+      admin:
+        sep_inquiries:
+          sep_inquiry:
+            move_sep_inquiry_to_closed: Spostare questa inchiesta chiusa
+            move_sep_inquiry_to_open: Spostare questa indagine per aprire
+            read_sep_inquiry: Leggi l'inchiesta
+            remove_sep_inquiry: "Sei sicuro di voler cancellare la richiesta di '%{name}'?"
+            title: Sep Inquiries
+          toggle_status:
+            closed: "Inchiesta '%{sep_inquiry}' è chiuso"
+            reopened: "Inchiesta '%{sep_inquiry}' si riapre"
+          index:
+            no_sep_inquiries: Non hai ancora ricevuto alcuna richiesta in.
+          show:
+            details: Dettagli
+            click_to_email: Clicca per e-mail
+            status: Stato
+            open: Aperto
+            closed: Chiuso
+            age: Età
+            actions: Azioni
+            back_to_all_sep_inquiries: Torna a tutte le richieste
+            sep_inquiry: Sep Inquiry
+          submenu:
+            update_notified: Aggiornamento chi viene notificata
+            edit_confirmation_email: Modifica email di conferma
+        settings:
+          update:
+            updated: "'%{setting}' stato aggiornato con successo."
+          notification_recipients_form:
+            settings_value_name: Invia a notifiche
+            explanation: "Ogni volta che qualcuno ti contatti sul suo sito web, Refinery invia una mail a dire che c'è una nuova indagine."
+            hint: "Inserisci un indirizzo email di cui sopra. Vuoi la notifica di andare a più di una persona? Inserisci più indirizzi email separati da virgole."
+            example: "E.g. me@domain.com, friend@msn.com, workmate@work.com"
+          confirmation_email_form:
+            to: A
+            from: Da
+            subject: Soggetto
+            click_to_edit_subject: Clicca qui per modificare l'oggetto
+            explanation: "Ogni volta che qualcuno ti contatti sul suo sito web, Refinery invia una e-mail per confermare la richiesta con la persona che ha reso."
+            below_edit_email_sent: Qui di seguito è possibile modificare l'e-mail che viene inviata.
+            the_customer_making_sep_inquiry: Il cliente rendendo l'indagine
+            message: Messaggio
+            note: "Nota: inserire il testo %name% dove desideri che il nome del cliente a comparire nella e-mail"
+          subject_form:
+            subject_value_name: Soggetto
+  activerecord:
+    models:
+      sep_inquiry: Sep Inquiry
+    attributes:
+      sep_inquiry:
+        first_name: First name
+        last_name: Last name
+        age: Age
+        gender: Gender
+        inquiry_from: Inquiry from
+        phone: Phone
+        email: Email
+        city: City
+        state_province: State province
+        country: Country
+        contact_time_1: Contact time 1
+        contact_time_2: Contact time 2
+        contact_time_3: Contact time 3
+        referral_source: Referral source
+        area_of_focus: Area of focus
+        event_times: Event times
+        athletic_background: Athletic background
+        athletic_vision: Athletic vision

@@ -1,0 +1,35 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_sep_inquiry') %><br/>
+<br/>
+<%= t('.sep_inquiry_starts') %><br/>
+<br/>
+<%= t('.first_name', :default => t('activerecord.attributes.sep_inquiry.first_name')) %>: <%= @sep_inquiry.first_name %><br/>
+<%= t('.last_name', :default => t('activerecord.attributes.sep_inquiry.last_name')) %>: <%= @sep_inquiry.last_name %><br/>
+<%= t('.age', :default => t('activerecord.attributes.sep_inquiry.age')) %>: <%= @sep_inquiry.age %><br/>
+<%= t('.gender', :default => t('activerecord.attributes.sep_inquiry.gender')) %>: <%= @sep_inquiry.gender %><br/>
+<%= t('.inquiry_from', :default => t('activerecord.attributes.sep_inquiry.inquiry_from')) %>: <%= @sep_inquiry.inquiry_from %><br/>
+<%= t('.phone', :default => t('activerecord.attributes.sep_inquiry.phone')) %>: <%= @sep_inquiry.phone %><br/>
+<%= t('.email', :default => t('activerecord.attributes.sep_inquiry.email')) %>: <%= @sep_inquiry.email %><br/>
+<%= t('.city', :default => t('activerecord.attributes.sep_inquiry.city')) %>: <%= @sep_inquiry.city %><br/>
+<%= t('.state_province', :default => t('activerecord.attributes.sep_inquiry.state_province')) %>: <%= @sep_inquiry.state_province %><br/>
+<%= t('.country', :default => t('activerecord.attributes.sep_inquiry.country')) %>: <%= @sep_inquiry.country %><br/>
+<%= t('.contact_time_1', :default => t('activerecord.attributes.sep_inquiry.contact_time_1')) %>: <%= @sep_inquiry.contact_time_1 %><br/>
+<%= t('.contact_time_2', :default => t('activerecord.attributes.sep_inquiry.contact_time_2')) %>: <%= @sep_inquiry.contact_time_2 %><br/>
+<%= t('.contact_time_3', :default => t('activerecord.attributes.sep_inquiry.contact_time_3')) %>: <%= @sep_inquiry.contact_time_3 %><br/>
+<%= t('.referral_source', :default => t('activerecord.attributes.sep_inquiry.referral_source')) %>: <%= @sep_inquiry.referral_source %><br/>
+<%= t('.area_of_focus', :default => t('activerecord.attributes.sep_inquiry.area_of_focus')) %>: 
+<%= @sep_inquiry.area_of_focus %>
+<%= t('.event_times', :default => t('activerecord.attributes.sep_inquiry.event_times')) %>: 
+<%= @sep_inquiry.event_times %>
+<%= t('.athletic_background', :default => t('activerecord.attributes.sep_inquiry.athletic_background')) %>: 
+<%= @sep_inquiry.athletic_background %>
+<%= t('.athletic_vision', :default => t('activerecord.attributes.sep_inquiry.athletic_vision')) %>: 
+<%= @sep_inquiry.athletic_vision %>
+<br/>
+<%= t('.sep_inquiry_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>

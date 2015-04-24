@@ -20,3 +20,5 @@ Refinery::Videos::Engine.load_seed
 
 # Added by Refinery CMS Inquiries engine
 Refinery::Inquiries::Engine.load_seed
+
+Refinery::SepInquiries::Engine.load_seed

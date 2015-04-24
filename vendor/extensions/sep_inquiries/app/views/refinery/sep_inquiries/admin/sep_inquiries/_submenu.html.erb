@@ -1,0 +1,22 @@
+<div id='actions'>
+  <ul>
+    <% if ::Refinery::SepInquiries::Admin::SepInquiriesController.searchable? %>
+      <li>
+        <%= render '/refinery/admin/search', :url => refinery.sep_inquiries_admin_sep_inquiries_path %>
+      </li>
+    <% end %>
+    <li <%= "class='selected'" if params[:action] == "index" %>>
+      <%= link_to t('.inbox'), refinery.sep_inquiries_admin_sep_inquiries_path, :class => "email_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.update_notified'),
+                    refinery.edit_sep_inquiries_admin_setting_path(:sep_inquiry_notification_recipients, :dialog => true, :height => 300),
+                    :class => "user_comment_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.edit_confirmation_email'),
+                  refinery.edit_sep_inquiries_admin_setting_path(:sep_inquiry_confirmation_body, :dialog => true),
+                  :class => "edit_email_icon" %>
+    </li>
+  </ul>
+</div>

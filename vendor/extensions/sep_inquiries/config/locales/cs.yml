@@ -1,0 +1,93 @@
+cs:
+  refinery:
+    plugins:
+      sep_inquiries:
+        title: Sep Inquiries
+        description: Poskytuje kontaktní formulář a zaznamenáva sep inquiries
+    sep_inquiries:
+      sep_inquiries:
+        new:
+          send: Odeslat zprávu
+          privacy_policy: Chráníme vaše soukromí
+      admin:
+        sep_inquiries:
+          delete: Trvale odstranit sep inquiry
+          sep_inquiry:
+            read_sep_inquiry: Přečíst sep inquiry
+            said: řekl
+            mark_as_spam: Označit jako spam
+            mark_as_ham: Označit jako přečtené
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upravit seznam notifikovaných
+            edit_confirmation_email: Upravit potvrzovací e-mail
+          index:
+            no_sep_inquiries: Zatím jste neobdrželi žádné sep inquiries.
+          spam:
+            no_spam: Hurá! Nemáte žádný spam.
+          show:
+            details: Podrobnosti
+            age: Věk
+            actions: Akce
+            back_to_all_sep_inquiries: Zpět na všechny sep inquiries
+            spam: Spam
+            spam_yes: 'ano'
+            sep_inquiry: Sep Inquiry
+            to: Komu
+            from: Od
+            click_to_email: Klikněte pro odeslání této adresy e-mailem
+            phone: Telefon
+            date: Datum
+            message: Zpráva
+        settings:
+          notification_recipients_form:
+            settings_value_name: Zaslat upozornění pro
+            explanation: Pokaždé, když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s upozorněním na nový sep inquiry.
+            hint: Když je odeslán nový sep inquiry, Refinery pošle upozornení na Váš e-mail.
+            example: "Zadejte e-mailové adresy jako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Předmet
+            click_to_edit_subject: Klikněte zde pro editaci předmetu
+            explanation: Když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s potvrzením o přijetí odesílateli sep inquiry.
+            below_edit_email_sent: Níže můžete upravit e-mail, který je odeslán.
+            the_customer_making_sep_inquiry: Klient delá sep inquiry
+            message: Zpráva
+            note: "Poznámka: umístěte text %name%, pro určení pozice jména klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_sep_inquiry: You just received a new sep inquiry on your website.
+          sep_inquiry_starts: --- sep inquiry starts ---
+          sep_inquiry_ends: --- sep inquiry ends ---
+          from: Od
+          email: E-mail
+          phone: Telefon
+          message: Zpráva
+          closing_line: S pozdravem
+          ps_html: P.S. Všechny vaše sep inquiries jsou uloženy pod záložkou "Sep Inquiries" v Refinery, pokud by jste je chtěli zobrazit pozdeji.
+  activerecord:
+    models:
+      sep_inquiry: Sep Inquiry
+    attributes:
+      sep_inquiry:
+        first_name: First name
+        last_name: Last name
+        age: Age
+        gender: Gender
+        inquiry_from: Inquiry from
+        phone: Phone
+        email: Email
+        city: City
+        state_province: State province
+        country: Country
+        contact_time_1: Contact time 1
+        contact_time_2: Contact time 2
+        contact_time_3: Contact time 3
+        referral_source: Referral source
+        area_of_focus: Area of focus
+        event_times: Event times
+        athletic_background: Athletic background
+        athletic_vision: Athletic vision
