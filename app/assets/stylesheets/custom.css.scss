@@ -472,6 +472,17 @@ h2 {color:rgba(65,104,136, .5);}
   background-color:lighten($ss-blue, 58%);
 }
 
+.btn {
+  color:#fff;
+  text-align:center;
+  box-shadow:0px 0px 8px rgba(0,0,0,.5);
+  border-radius:30px;
+  background-color:darken($ss-blue,20%);
+  border:2px solid $ss-blue;
+  &:hover {background-color:lighten($ss-blue,10%);}
+  text-transform: uppercase;
+}
+
 
 
 
