@@ -21,12 +21,21 @@ section {
   //border-bottom:1px solid rgba(0,0,0,.1);
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float:none;
+}
+
+.navbar .navbar-collapse {
+  text-align:center;
+}
+
 //HOME PAGE
 
 #home-main {
   min-height:480px;
   padding-bottom:80px;
-  background-image:url(home-main-IMG_5100.jpg);
+  background-image:url(IMG_5117.jpg);
   background-position:fixed;
   background-size:cover;
   background-position-y:50%;
@@ -35,7 +44,7 @@ section {
     font-size:56px;
     color:#fff;
     text-shadow:1px 1px 1px rgba(0,0,0,.5);
-    padding-top:2em;
+    padding-top:.5em;
     text-align:center;
     margin-bottom:20px;
   }
