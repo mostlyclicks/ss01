@@ -16,17 +16,17 @@
       </div>
 
       <div class='field last_name_field string_field form-group'>
-        <%= f.label :last_name, class: 'control-label col-sm-3'  %>
+        <%= f.required_label :last_name, class: 'control-label col-sm-3'  %>
         <div class="col-sm-9"><%= f.text_field :last_name, class: 'form-control'  %></div>
       </div>
 
       <div class='field age_field string_field form-group'>
-        <%= f.label :age, class: 'control-label col-sm-3'  %>
+        <%= f.required_label :age, class: 'control-label col-sm-3'  %>
         <div class="col-sm-9"><%= f.text_field :age, class: 'form-control'  %></div>
       </div>
 
       <div class='field gender_field radio_field form-group'>
-        <%= f.label :gender, class: 'control-label col-sm-3' %>
+        <%= f.required_label :gender, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><% Refinery::SepInquiries::SepInquiry::GENDERS.each do |value, name| %>
                   <%= f.radio_button :gender, (name || value), :value => value %>
                   <%= f.label :"gender_#{(name || value)}", value.humanize %><br />
@@ -42,7 +42,7 @@
       </div>
 
       <div class='field phone_field string_field form-group'>
-        <%= f.label :phone, class: 'control-label col-sm-3' %>
+        <%= f.required_label :phone, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><%= f.text_field :phone, class: 'form-control' %></div>
       </div>
 
@@ -52,22 +52,22 @@
       </div>
 
       <div class='field city_field string_field form-group'>
-        <%= f.label :city, class: 'control-label col-sm-3' %>
+        <%= f.required_label :city, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><%= f.text_field :city, class: 'form-control' %></div>
       </div>
 
       <div class='field state_province_field string_field form-group'>
-        <%= f.label :state_province, class: 'control-label col-sm-3' %>
+        <%= f.required_label :state_province, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><%= f.text_field :state_province, class: 'form-control' %></div>
       </div>
 
       <div class='field country_field string_field form-group'>
-        <%= f.label :country, class: 'control-label col-sm-3' %>
+        <%= f.required_label :country, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><%= f.text_field :country, class: 'form-control' %></div>
       </div>
 
       <div class='field contact_time_1_field string_field form-group'>
-        <%= f.label :contact_time_1, class: 'control-label col-sm-3' %>
+        <%= f.required_label :contact_time_1, class: 'control-label col-sm-3' %>
         <div class="col-sm-9"><%= f.text_field :contact_time_1, class: 'form-control' %></div>
       </div>
 
@@ -95,24 +95,33 @@
     <div class="col-md-6">
     
       <h3>Performance Information</h3>
+
     
           <div class='field area_of_focus_field text_field form-group'>
-            <%= f.label :area_of_focus %>
+            <%#= f.required_label :area_of_focus, :name => 'Hey focus' %>
+            <label class="required" for="sep_inquiry_area_of_focus">In a few words, please describe your area of focus: *</label>
+            
             <%= f.text_area :area_of_focus, :rows => 6, class: 'form-control' %>
           </div>
     
           <div class='field event_times_field text_field form-group'>
-            <%= f.label :event_times %>
+            <%#= f.required_label :event_times %>
+            <label class="required" for="sep_inquiry_event_times">List your top times and dates achieved: *</label>
+            <!-- , 'List your top times and dates achieved:' -->
             <%= f.text_area :event_times, :rows => 6, class: 'form-control'  %>
           </div>
     
           <div class='field athletic_background_field text_field form-group'>
-            <%= f.label :athletic_background %>
+            <%#= f.required_label :athletic_background %>
+            <label class="required" for="sep_inquiry_athletic_background">Briefly describe your athletic background: *</label>
+            <!-- , 'Briefly describe your athletic background:'  -->
             <%= f.text_area :athletic_background, :rows => 6, class: 'form-control'  %>
           </div>
     
           <div class='field athletic_vision_field text_field form-group'>
-            <%= f.label :athletic_vision %>
+            <%#= f.required_label :athletic_vision %>
+            <label class="required" for="sep_inquiry_athletic_vision">In a few words, tell us your vision as an athlete: *</label>
+            <!-- , 'In a few words, tell us your vision as an athlete:'  -->
             <%= f.text_area :athletic_vision, :rows => 6, class: 'form-control'  %>
           </div></div>
 

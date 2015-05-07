@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+
+  helpers:
+    label:
+      sep_inquiry:
+        area_of_focus: 'In a few words, please describe your area of focus:'
