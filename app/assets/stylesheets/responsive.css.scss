@@ -31,7 +31,14 @@
     }
 
     .do-boxes {
-      height:225px;
+      min-height:400px;
+      border-radius:200px;
+      h3 {
+
+      }
+      p {
+        font-size:24px;
+      }
     }
   //   .do-boxes {
 

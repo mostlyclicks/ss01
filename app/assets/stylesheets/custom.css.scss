@@ -51,9 +51,9 @@ section {
   h3 {
     padding:1.25em 2em 1em 2em;
     text-align:center;
-    color:lighten($ss-blue, 37%);
+    color:lighten($ss-blue, 100%);
     text-shadow:1px 1px 1px rgba(0,0,0,1);
-    background-color:darken($ss-blue, 10%);
+    // background-color:darken($ss-blue, 10%);
     font-size: 3.55em;
   }
   a {
@@ -128,7 +128,7 @@ section {
 
 #home-what-we-do {
   padding:80px 20px;
-  background:url(weight.jpg) 50% 0 fixed;
+  background:url(IMG_5127.jpg) 50% 0 fixed;
   width:100%;
   // background-size:cover;
   position:relative;
@@ -156,16 +156,24 @@ section {
     background-clip: padding-box;
     border: 2px solid transparent;
     padding:20px;
-    min-height:200px;
+    min-height:320px;
+    border-radius:160px;
+    border:10px solid rgba(255,255,255,.2);
     h3 {
        color:lighten($ss-blue, 45%);
+       text-align:center;
+       height:3em;
+       padding:20px 20px;
+       margin-top:1em;
     }
     p {
-      position:absolute;
-      top:50%;
-      padding:0 0px 20px 0px;
-      margin-top: 1em;
-      color:rgba(255,255,255,.8);
+      // position:absolute;
+      // top:50%;
+      padding:30px;
+      margin-top: 0em;
+      color:rgba(255,255,255,.98);
+      text-align:center;
+      font-size:16px;
       span, a {
         font-weight:bold;
         color:lighten($ss-blue, 45%);
