@@ -1,0 +1,81 @@
+en:
+  refinery:
+    plugins:
+      online_conferences:
+        title: Online Conferences
+        description: Provides a contact form and stores online conferences
+    online_conferences:
+      online_conferences:
+        new:
+          send: Send message
+          privacy_policy: We value your privacy
+      admin:
+        online_conferences:
+          delete: Remove this online conference forever
+          online_conference:
+            read_online_conference: Read the online conference
+            said: said
+            mark_as_spam: Mark as spam
+            mark_as_ham: Move to inbox
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Update who gets notified
+            edit_confirmation_email: Edit confirmation email
+          index:
+            no_online_conferences: You have not received any online conferences yet.
+          spam:
+            no_spam: Hooray! You don't have any spam.
+          show:
+            details: Details
+            age: Age
+            actions: Actions
+            back_to_all_online_conferences: Back to all online conferences
+            spam: Spam
+            spam_yes: 'yes'
+            online_conference: Online Conference
+            to: To
+            from: From
+            click_to_email: Click to email this address
+            phone: Phone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            settings_value_name: Send notifications to
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to say there is a new online conference.
+            hint: When a new online conference is submitted, Refinery will send an email notification to you.
+            example: "Enter your email address(es) like: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: To
+            from: From
+            subject: Subject
+            click_to_edit_subject: Click here to edit the subject
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the online conference with the person who made it.
+            below_edit_email_sent: Below you can edit the email that is sent out.
+            the_customer_making_online_conference: The customer making the online conference
+            message: Message
+            note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_online_conference: You just received a new online conference on your website.
+          online_conference_starts: --- online conference starts ---
+          online_conference_ends: --- online conference ends ---
+          from: From
+          email: Email
+          phone: Phone
+          message: Message
+          closing_line: Kind Regards
+          ps_html: P.S. All your online conferences are stored in the "Online Conferences" section of Refinery should you ever want to view it later there.
+  activerecord:
+    models:
+      online_conference: Online Conference
+    attributes:
+      online_conference:
+        name: Name
+        email: Email
+        inquiry_from: Inquiry from
+        topic_one: Topic one
+        topic_two: Topic two
+        topic_three: Topic three

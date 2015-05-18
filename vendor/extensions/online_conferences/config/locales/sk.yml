@@ -1,0 +1,81 @@
+sk:
+  refinery:
+    plugins:
+      online_conferences:
+        title: Online Conferences
+        description: Poskytuje kontaktný formulár a zaznamenáva online conferences
+    online_conferences:
+      online_conferences:
+        new:
+          send: Odoslať správu
+          privacy_policy: Chránime vaše súkromie
+      admin:
+        online_conferences:
+          delete: Trvalo odstrániť online conference
+          online_conference:
+            read_online_conference: Prečítať online conference
+            said: povedal
+            mark_as_spam: Označiť ako spam
+            mark_as_ham: Označiť ako prečítané
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upraviť zoznam notifikovaných
+            edit_confirmation_email: Upraviť potvrdzovací e-mail
+          index:
+            no_online_conferences: Zatiaľ ste neobdržali žiadne online conferences.
+          spam:
+            no_spam: Hurá! Nemáte žiaden spam.
+          show:
+            details: Podrobnosti
+            age: Vek
+            actions: Akcie
+            back_to_all_online_conferences: Späť na všetky online conferences
+            spam: Spam
+            spam_yes: 'áno'
+            online_conference: Online Conference
+            to: Komu
+            from: Od
+            click_to_email: Kliknite pre odoslanie tejto adresy e-mailom
+            phone: Telefón
+            date: Dátum
+            message: Správa
+        settings:
+          notification_recipients_form:
+            settings_value_name: Poslať upozornenie pre
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s upozornením na nový online conference.
+            hint: Keď je odoslaný nový online conference, Refinery odošle upozornenie na Váš e-mail.
+            example: "Zadajte e-mailovú adresu(y) ako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Predmet
+            click_to_edit_subject: Kliknite tu ak chcete upraviť predmet
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s potvrdením o prijatí odosielateľovi online conference.
+            below_edit_email_sent: Nižšie môžete upraviť e-mail, ktorý je odosielaný.
+            the_customer_making_online_conference: Klient robiť online conference
+            message: Správa
+            note: "Poznámka: umiestniťe text %name%, pre určenie pozície mena klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Ahoj
+          you_recieved_new_online_conference: Práve ste obdržali nový online conference na vašej webové stránke.
+          online_conference_starts: --- online conference začiatok ---
+          online_conference_ends: --- online conference koniec ---
+          from: Od
+          email: E-mail
+          phone: Telefón
+          message: Správa
+          closing_line: S pozdravom
+          ps_html: P.S. Všetky vaše online conferences sú uložené v "Online Conferences" sekcii v Refinery, ak by ste ich chceli zobraziť neskôr.
+  activerecord:
+    models:
+      online_conference: Online Conference
+    attributes:
+      online_conference:
+        name: Name
+        email: Email
+        inquiry_from: Inquiry from
+        topic_one: Topic one
+        topic_two: Topic two
+        topic_three: Topic three

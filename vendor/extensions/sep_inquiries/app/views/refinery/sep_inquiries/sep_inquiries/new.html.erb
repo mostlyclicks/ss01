@@ -129,10 +129,12 @@
             <%= f.text_area :athletic_vision, :rows => 6, class: 'form-control'  %>
           </div></div>
 
-      <div class="col-md-12 text-center submit-div"><div class='actions'>
-              <%= f.submit 'Submit my information', class: 'btn btn-primary btn-lg s-button' %> 
-              <!-- t('.send') -->
-            </div></div>
+      <div class="col-md-12 text-center submit-div">
+        <div class='actions'>
+        <%= f.submit 'Submit my information', class: 'btn btn-primary btn-lg s-button' %> 
+        <!-- t('.send') -->
+        </div>
+          </div>
     <% end %>
   </div>
 <% end %>
@@ -140,11 +142,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-<section id="sep-form">
-      <%= render '/refinery/content_page' %>
-</section>
+      <section id="sep-form">
+            <%= render '/refinery/content_page' %>
+      </section>
     </div>
-
   </div>
-
 </div>

@@ -22,3 +22,5 @@ Refinery::Videos::Engine.load_seed
 Refinery::Inquiries::Engine.load_seed
 
 Refinery::SepInquiries::Engine.load_seed
+
+Refinery::OnlineConferences::Engine.load_seed

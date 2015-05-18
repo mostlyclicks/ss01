@@ -11,6 +11,9 @@ PATH
   specs:
     refinerycms-athletes (1.0)
       refinerycms-core (~> 2.1.5)
+    refinerycms-online_conferences (1.0)
+      refinerycms-core (~> 2.1.5)
+      refinerycms-settings (~> 2.1.0)
     refinerycms-sep_inquiries (1.0)
       refinerycms-core (~> 2.1.5)
       refinerycms-settings (~> 2.1.0)
@@ -339,6 +342,7 @@ DEPENDENCIES
   refinerycms-athletes!
   refinerycms-blog (~> 2.1.0)
   refinerycms-inquiries (~> 2.1.0)
+  refinerycms-online_conferences!
   refinerycms-page-images (~> 2.1.0)
   refinerycms-sep_inquiries!
   refinerycms-videos!

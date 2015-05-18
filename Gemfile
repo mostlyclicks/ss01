@@ -38,3 +38,4 @@ gem 'refinerycms-athletes', :path => 'vendor/extensions'
 
 gem 'refinerycms-videos', :path => 'vendor/extensions'
 gem 'refinerycms-sep_inquiries', :path => 'vendor/extensions'
+gem 'refinerycms-online_conferences', :path => 'vendor/extensions'

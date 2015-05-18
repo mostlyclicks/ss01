@@ -1,0 +1,86 @@
+<div id='records'>
+  <h2><%= t('.online_conference') %></h2>
+  <table id='online_conference' class='inquiry'>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.name', :default => t('activerecord.attributes.online_conference.name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.email', :default => t('activerecord.attributes.online_conference.email')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.email %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.inquiry_from', :default => t('activerecord.attributes.online_conference.inquiry_from')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.inquiry_from %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.topic_one', :default => t('activerecord.attributes.online_conference.topic_one')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.topic_one %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.topic_two', :default => t('activerecord.attributes.online_conference.topic_two')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.topic_two %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.topic_three', :default => t('activerecord.attributes.online_conference.topic_three')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @online_conference.topic_three %>
+        </td>
+      </tr>
+  </table>
+</div>
+<div id='actions'>
+  <h2><%= t('.details')%></h2>
+  <p>
+    <strong><%= t('.age') %>:</strong> <%= time_ago_in_words(@online_conference.created_at) %>
+  </p>
+  <h2><%= t('.actions') %></h2>
+  <ul>
+    <li>
+      <%= link_to t('.back_to_all_online_conferences'), refinery.url_for(:action => 'index'),
+                   :class => "back_icon" %>
+    </li>
+    <li>
+      <%= link_to t('delete', :scope => 'refinery.online_conferences.admin.online_conferences'),
+                  refinery.online_conferences_admin_online_conference_path(@online_conference),
+                  :class => 'delete_icon no-tooltip confirm-delete',
+                  :title => t('delete', :scope => 'refinery.online_conferences.admin.online_conferences'),
+                  :'data-confirm' => t('message', :scope => 'refinery.admin.delete', :title => @online_conference.name),
+                  :'data-method' => "delete" %>
+    </li>
+  </ul>
+</div>

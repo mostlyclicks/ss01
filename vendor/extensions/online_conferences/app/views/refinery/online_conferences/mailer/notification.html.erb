@@ -1,0 +1,19 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_online_conference') %><br/>
+<br/>
+<%= t('.online_conference_starts') %><br/>
+<br/>
+<%= t('.name', :default => t('activerecord.attributes.online_conference.name')) %>: <%= @online_conference.name %><br/>
+<%= t('.email', :default => t('activerecord.attributes.online_conference.email')) %>: <%= @online_conference.email %><br/>
+<%= t('.inquiry_from', :default => t('activerecord.attributes.online_conference.inquiry_from')) %>: <%= @online_conference.inquiry_from %><br/>
+<%= t('.topic_one', :default => t('activerecord.attributes.online_conference.topic_one')) %>: <%= @online_conference.topic_one %><br/>
+<%= t('.topic_two', :default => t('activerecord.attributes.online_conference.topic_two')) %>: <%= @online_conference.topic_two %><br/>
+<%= t('.topic_three', :default => t('activerecord.attributes.online_conference.topic_three')) %>: <%= @online_conference.topic_three %><br/>
+<br/>
+<%= t('.online_conference_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>
