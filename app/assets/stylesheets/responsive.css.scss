@@ -75,12 +75,20 @@
   #show-header {
     margin-top:-86px;
     padding-top:100px;
-  h2 {
-    font-size: 32px;
-    padding:20px 100px;
-    font-weight: 700;
+    h2 {
+      font-size: 32px;
+      padding:20px 100px;
+      font-weight: 700;
+    }
   }
-}
+
+  #home-the-team {
+    .team {
+      height:18em !important;
+      padding:40px 80px !important;
+      
+    }
+  }
 
 
 
@@ -98,6 +106,15 @@
       min-height: 28em;
     }
   }
+
+  #home-the-team {
+    .team {
+      height:18em !important;
+      padding:40px 40px !important;
+      
+    }
+  }
+  
 
 }/* END OF MEDIUM DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
 
