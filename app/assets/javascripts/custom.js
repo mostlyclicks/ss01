@@ -41,6 +41,22 @@ $(document).ready(function () {
 })
 
 
+//Youtube video
+
+// var player;
+//  function onYouTubeIframeAPIReady() {
+//      player = new YT.Player('video1', { videoId: 'lgeC4KT-7NE' });
+//  }
+ 
+// $(document).ready(function () {
+//      $('#carousel-vid').carousel({
+//          interval: 5000
+//      }).bind('slide, .carousel-control', function () {
+//          player.stopVideo();
+//      });
+//  });
+
+
 //Parallax
 
 $(document).ready(function(){

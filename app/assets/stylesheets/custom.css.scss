@@ -126,6 +126,17 @@ section {
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {margin-right:-30px;top:150px;}
 }
 
+#home-videos {
+  h3 {
+    margin-bottom:1em;
+  }
+  .carousel-control {
+    
+    height:50px;
+    top:47%;
+  }
+}
+
 #home-what-we-do {
   padding:80px 20px;
   background:url(IMG_5127.jpg) 50% 0 fixed;
