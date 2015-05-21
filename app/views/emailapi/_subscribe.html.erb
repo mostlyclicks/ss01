@@ -1,5 +1,5 @@
-<h1>Dive In!</h1>
-<p>Subcribe to our email list and get access to a free video: "Understand core engagement and body-line for swimmers with these 3 exercises!"</p>
+
+<h3>Subscribe to our monthly newsletter for free!</h3>
 <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true", :class => 'form-inline') do -%>
    <%= email_field(:email, :address, {id: "email", placeholder: "email address", :class => 'form-control input-lg'}) %> 
    <%= submit_tag("Sign me up!", :class => 'btn btn-primary btn-lg') %>
