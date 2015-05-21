@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_more_videos
-    @home_videos = Refinery::Videos::Video.limit(3).offset(1)
+    @home_videos = Refinery::Videos::Video.limit(10)
   end
 
   def load_videos
