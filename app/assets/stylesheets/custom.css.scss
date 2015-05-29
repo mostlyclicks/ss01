@@ -33,7 +33,7 @@ section {
 //HOME PAGE
 
 #home-main {
-  min-height:480px;
+  min-height:90vh;
   padding-bottom:80px;
   background-image:url(IMG_5117-logo.jpg);
   background-position:fixed;
@@ -48,8 +48,16 @@ section {
     text-align:center;
     margin-bottom:20px;
   }
+  h2 {
+    font-size:42px;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,.5);
+    padding-top:.5em;
+    text-align:center;
+    margin-bottom:0px;
+  }
   h3 {
-    padding:1.25em 2em 1em 2em;
+    padding:0em 2em 1em 2em;
     text-align:center;
     color:lighten($ss-blue, 100%);
     text-shadow:1px 1px 1px rgba(0,0,0,1);
