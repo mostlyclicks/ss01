@@ -151,14 +151,12 @@ section {
   width:100%;
   // background-size:cover;
   position:relative;
-
-  // min-height:800px;
   height:auto;
   background-repeat:no-repeat;
   // background-position-x:-200px;
     h1 {
-    padding-top:250px;
-    padding-bottom:140px;
+    padding-top:40px;
+    padding-bottom:40px;
     text-align: center !important;
     color:rgba(255,255,255,.8);
     text-transform: uppercase;
@@ -170,35 +168,70 @@ section {
     border: 2px solid transparent;
  
   }
-  .do-boxes {
-    background-color:rgba(0,0,0,.6);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    padding:20px;
-    min-height:320px;
-    border-radius:160px;
-    border:10px solid rgba(255,255,255,.2);
-    h3 {
-       color:lighten($ss-blue, 45%);
+  // .do-boxes {
+  //   background-color:rgba(0,0,0,.6);
+  //   background-clip: padding-box;
+  //   border: 2px solid transparent;
+  //   padding:20px;
+  //   min-height:320px;
+  //   border-radius:160px;
+  //   border:10px solid rgba(255,255,255,.2);
+  //   h3 {
+  //      color:lighten($ss-blue, 45%);
+  //      text-align:center;
+  //      height:3em;
+  //      padding:20px 20px;
+  //      margin-top:1em;
+  //   }
+  //   p {
+  //     // position:absolute;
+  //     // top:50%;
+  //     padding:30px;
+  //     margin-top: 0em;
+  //     color:rgba(255,255,255,.98);
+  //     text-align:center;
+  //     font-size:16px;
+  //     span, a {
+  //       font-weight:bold;
+  //       color:lighten($ss-blue, 45%);
+  //     }
+  //   }
+  // }
+
+   .do-boxes {
+     // background-color:rgba(0,0,0,.6);
+     background-clip: padding-box;
+     // border: 2px solid transparent;
+     padding:20px 30px;
+     min-height:320px;
+
+     // border:10px solid rgba(255,255,255,.2);
+     h3 {
+        color:#fff;
+        text-align:center;
+        font-size:32px;
+        height:auto;
+        padding:20px 20px;
+        margin-top:1em;
+     }
+     p {
+       // position:absolute;
+       // top:50%;
+       
+       margin-top: 0em;
+       color:rgba(255,255,255,.98);
        text-align:center;
-       height:3em;
-       padding:20px 20px;
-       margin-top:1em;
-    }
-    p {
-      // position:absolute;
-      // top:50%;
-      padding:30px;
-      margin-top: 0em;
-      color:rgba(255,255,255,.98);
-      text-align:center;
-      font-size:16px;
-      span, a {
-        font-weight:bold;
-        color:lighten($ss-blue, 45%);
-      }
-    }
-  }
+       font-size:20px;
+       line-height: 1.35em;
+       span, a {
+         font-weight:bold;
+         color:lighten($ss-blue, 45%);
+       }
+     }
+   }
+
+
+
 }
 
 #home-our-athletes {
