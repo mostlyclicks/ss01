@@ -243,18 +243,28 @@ section {
 #home-the-team {
   padding:80px 20px;
   text-align:center;
-  button {
-    background-color:transparent;
-    border:none;
-    font-family:$oswald;
-    font-size:2em;
-    color:$ss-blue;
-    margin-top:2em;
+  h2 {
+    margin-bottom:0;padding-bottom:0px;
+    button {
+      background-color:transparent;
+      border:0;
+      font-family:$raleway;
+      font-size:30px;
+      color:$ss-blue;
+    }
+  }
+  small {
+
+    font-size:16px;
+   
 
   }
+  
   .team {
-    height:22em;
     padding:40px 0px;
+  
+
+
 
 
 
