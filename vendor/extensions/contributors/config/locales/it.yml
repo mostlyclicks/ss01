@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Aggiungi Nuovo Contributor
+            reorder: Riordina Contributors
+            reorder_done: Termina il Riordino di Contributors
+          records:
+            title: Contributors
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Contributors. Clicca "Aggiungi Nuovo Contributor" per aggiungere il tuo primo contributor.
+          contributor:
+            view_live_html: Guarda live questo contributor <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo contributor
+            delete: Rimuovi per sempre questo contributor
+      contributors:
+        show:
+          other: Altri Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

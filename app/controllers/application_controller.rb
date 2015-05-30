@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :load_athletes, :load_home_athletes, :load_blog_posts, :load_videos_home, :load_more_videos
-
+  before_filter :load_contributors
 
   protected
 
@@ -43,6 +43,10 @@ class ApplicationController < ActionController::Base
 
   def load_videos
     @videos = Refinery::Videos::Video.all
+  end
+
+  def load_contributors
+    @contributors = Refinery::Contributors::Contributor.all
   end
 
 end

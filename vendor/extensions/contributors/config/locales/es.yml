@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+#        article: masculino/femenino
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Crear nuevo contributor
+            reorder: Reordenar contributors
+            reorder_done: Reordenación de contributors completada
+          records:
+            title: Contributors
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay contributors todavía. Pulsa en "Crear nuevo Contributor" para crear tu primer contributor.
+          contributor:
+            view_live_html: Ver este contributor como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este contributor
+            delete: Borrar este contributor para siempre
+      contributors:
+        show:
+          other: Otros contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

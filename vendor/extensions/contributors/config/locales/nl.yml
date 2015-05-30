@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Nieuwe Contributor toevoegen
+            reorder: De volgorde van de Contributors wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Contributor-volgorde
+          records:
+            title: Contributors
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Contributors. Druk op 'Nieuwe Contributor toevoegen' om de eerste toe te voegen.
+          contributor:
+            view_live_html: Deze contributor op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze contributor
+            delete: Deze contributor definitief verwijderen
+      contributors:
+        show:
+          other: Andere Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

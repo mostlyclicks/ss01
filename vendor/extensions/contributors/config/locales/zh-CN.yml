@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: 建立新的 Contributor
+            reorder: 对 Contributors 重新排序
+            reorder_done: 对 Contributors 的重新排序结束
+          records:
+            title: Contributors
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Contributors yet. Click "Add New Contributor" to add your first contributor.
+            no_items_yet: 目前没有 Contributors . 点击 "Add New Contributor" 创建一个contributor.
+          contributor:
+            view_live_html: 查看 contributor 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 contributor
+            delete: 永久删除 contributor
+      contributors:
+        show:
+          other: 其他 Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

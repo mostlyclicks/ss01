@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Yeni Ekle Contributor
+            reorder: Tekrar sirala Contributors
+            reorder_done: Tekrar siralama tamamlandiContributors
+          records:
+            title: Contributors
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Contributors yok henuz.  Tikla "Yeni Ekle Contributor" eklemek senin ilk contributor.
+          contributor:
+            view_live_html: Bunu canlu contributor goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle contributor
+            delete: Bunu Sil contributor sonsuza dek
+      contributors:
+        show:
+          other: Diger Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

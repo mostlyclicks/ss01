@@ -305,18 +305,22 @@
         <small>Head of Finances</small>
       </div>
     </div>
-
-
-
-
-
-
   </div>
 </section>
 
 <section id="contributors">
   <div class="containers">
-    <div class="row">
+    <div class="row text-center">
+      <% @contributors.each do |c| %>
+        <div class="col-md-3">
+          <h3><%= c.name %></h3>
+          <p><%= c.description.html_safe %></p>
+        </div>
+      <% end %>
+    </div>
+
+
+<!--     <div class="row">
       <h1>Contributors</h1>
       <div class="col-md-3">
         <h3>Sean Kao</h3>
@@ -334,7 +338,7 @@
         <h3>Byron Shefchik</h3>
         <p>Byron Shefchik is a five-time NCAA All-American with numerous accolades under his belt, including a bronze medal in the 1997 World University Games, a 2012 U.S. Masters National Champion title, and 2013 Pan-American Masters Chamption title. He is also the first male athlete from the BYU Swimming and Diving team to be inducted into the Athletic Hall of Fame at BYU, where he graduated with a degree in physical therapy and later earned his MBA.</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
 

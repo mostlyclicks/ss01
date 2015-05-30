@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="contributors">
+    <% @contributors.each do |contributor| %>
+      <li>
+        <%= link_to contributor.name, refinery.contributors_contributor_path(contributor) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

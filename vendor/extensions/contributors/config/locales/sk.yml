@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Pridať Contributor
+            reorder: Preusporiadať Contributors
+            reorder_done: Koniec radenia Contributors
+          records:
+            title: Contributors
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Contributors. Kliknite na "Pridať Contributor" pre pridanie prvého contributor.
+          contributor:
+            view_live_html: Zobraziť náhľad contributor<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť contributor
+            delete: Zmazať contributor
+      contributors:
+        show:
+          other: Daľšie Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

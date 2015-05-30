@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Contributor
+            reorder: Réordonner les Contributors
+            reorder_done: Fin de réordonnancement des Contributors
+          records:
+            title: Contributors
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Contributor. Cliquer sur "Créer un(e) nouve(au/l/lle) Contributor" pour créer votre premi(er/ère) contributor.'
+          contributor:
+            view_live_html: Voir ce(t/tte) contributor <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) contributor
+            delete: Supprimer définitivement ce(t/tte) contributor
+      contributors:
+        show:
+          other: Autres Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image

@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      contributors:
+        title: Contributors
+    contributors:
+      admin:
+        contributors:
+          actions:
+            create_new: Lag en ny Contributor
+            reorder: Endre rekkefølgen på Contributors
+            reorder_done: Ferdig å endre rekkefølgen Contributors
+          records:
+            title: Contributors
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Contributors enda. Klikk på "Lag en ny Contributor" for å legge til din første contributor.
+          contributor:
+            view_live_html: Vis hvordan denne contributor ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne contributor
+            delete: Fjern denne contributor permanent
+      contributors:
+        show:
+          other: Andre Contributors
+  activerecord:
+    attributes:
+      'refinery/contributors/contributor':
+        name: Name
+        description: Description
+        image: Image
