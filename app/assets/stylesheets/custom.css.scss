@@ -33,15 +33,16 @@ section {
 //HOME PAGE
 
 #home-main {
-  min-height:90vh;
+  min-height:85vh;
   padding-bottom:80px;
-  background-image:url(IMG_5117-logo.jpg);
+  background-image:url(IMG_5117-logo-ss.jpg);
   background-position:fixed;
   background-size:cover;
   background-position-y:50%;
   margin-top:0px;
   h1 {
     font-size:56px;
+    font-weight:100;
     color:#fff;
     text-shadow:1px 1px 1px rgba(0,0,0,.5);
     padding-top:.5em;
@@ -49,7 +50,7 @@ section {
     margin-bottom:20px;
   }
   h2 {
-    font-size:42px;
+    font-size:48px;
     color:#fff;
     text-shadow:1px 1px 1px rgba(0,0,0,.5);
     padding-top:.5em;
@@ -98,6 +99,7 @@ section {
 
 
 #home-about {
+  min-height:90vh;
   box-shadow:inset 0px 0px 100px rgba(0,0,0,.4);
   padding:80px 20px;
   background-image:url(untitled-427-Edit-Edit-2-Edit-blue.jpg);
@@ -108,7 +110,7 @@ section {
 
   p {
     color:rgba(255,255,255,.9);
-    font-size:20px;
+    font-size:24px;
   }
 }
 
