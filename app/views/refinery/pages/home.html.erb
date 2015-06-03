@@ -422,34 +422,34 @@
 
 <section id="home-the-team">
   
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
         <h1>The Team</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 text-center team">
+      <div class="col-md-4 col-sm-6 text-center team">
         <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Alex – a 2012 London Olympian, Pac-12 champion, and NCAA Division I All-American in the 200-yard butterfly– is Swimmer Strength’s Romanian powerhouse. He was a collegiate student-athlete at both the University of Alabama and Arizona State University and is currently continuing his journey towards the 2016 Rio Olympic Games while pursuing a degree in film media production.">Alex Coci</button></h2>
         <small>Co-Owner, Media Production Director</small>
       </div>
-      <div class="col-md-4 col-md-offset-4 text-center team">
+      <div class="col-md-4 col-sm-6 col-md-offset-4 text-center team">
         <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="With a background in economics and international studies, Björn brings a strong academic and athletic expertise to the table, . As a 2005 Youth Olympian and Junior National Team Member for Sweden, this former University of Utah student-athlete set eight school records and was a Pac-12 finalist. Björn knows what it takes to compete and succeed on the highest level, ensuring quality work from start to finish.">Björn Gunnarsson</button></h2>
         <small>Co-Owner, Director of Operations</small>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center team">
+      <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-4 text-center team">
         <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Deniz currently serves as the strength coach for the University of Utah Swimming and Diving team while pursuing his master’s in exercise physiology and sport psychology. A former Arizona State University varsity swimmer and junior national team member for Sweden and Turkey, Deniz is committed to helping high-performance swimmers around the world to gain a competitive edge through comprehensive and individualized training.">Deniz Hekmati</button></h2>
         <small>Founder, Strength and Conditioning Specialist</small>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 text-center team">
+      <div class="col-md-4 col-sm-6 text-center team">
         <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Jesper is a living example of international experience. Born and raised in Sweden, he led the Arizona State University swim team as a captain and participated at the 2011 World University Games in Shenzhen, China as a member of the Swedish National team. He earned his degree in business communications with an international business certificate.">Jesper Akesson</button></h2>
         <small>Co-Owner, Director of Communications</small>
       </div>
-      <div class="col-md-4 col-md-offset-4 text-center team">
+      <div class="col-md-4 col-sm-6 col-md-offset-4 text-center team">
         <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="As a fellow sun-devil for Alex, Deniz, and Jesper, Derek earned his degree in accounting and finance. His exceptional work ethic keeps Swimmer Strength on the right path.">Derek Knittle</button></h2>
         <small>Head of Finances</small>
       </div>
@@ -464,7 +464,7 @@
       <% @contributors.each do |c| %>
         <div class="col-md-3">
           <h3><%= c.name %></h3>
-          <p><%= c.description.html_safe %></p>
+          <%= c.description.html_safe %>
         </div>
       <% end %>
     </div>

@@ -117,13 +117,16 @@
     }
   }
 
-  #home-the-team {
-    // .team {
-    //   height:18em !important;
-    //   padding:40px 40px !important;
-      
-    // }
-  }
+       .team {
+      // height:340px;
+      // width:340px;
+    
+
+
+    
+     }
+
+
   
 
 }/* END OF MEDIUM DEVICES ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
@@ -142,6 +145,22 @@
       p {padding:0px 60px;}
     }
 
+  }
+
+  #home-the-team {
+    
+
+     .team {
+      height:360px;
+      width:360px;
+      padding:10px;
+      h2 {
+        margin-top:110px;
+      }
+
+
+    
+     }
   }
 
   #home-quotes {
