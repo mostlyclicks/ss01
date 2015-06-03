@@ -112,8 +112,11 @@
   }
 
   #swimmers-edge-programs {
+    h1 {
+      font-size:64px;
+    }
     blockquote {
-      min-height: 28em;
+      min-height: 18em;
     }
   }
 
@@ -134,8 +137,9 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #swimmers-edge-programs {
+
     blockquote {
-      min-height: 22em;
+      min-height: 16em;
     }
   }
 

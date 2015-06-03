@@ -362,11 +362,20 @@ section {
   h1 {
     text-transform:uppercase;
     padding-bottom:.5em;
-    color:rgba(65,104,136,.9);
+    // color:rgba(65,104,136,.9);
+    color:lighten($ss-blue, 30%);
   }
   h2 {
     color:lighten($ss-blue, 30%);
+    margin-bottom:.85em;
   }
+  h3 {
+    font-size:32px;
+    text-align:center;
+    color:lighten($ss-blue, 40%);
+    margin-bottom:1em;
+  }
+
   small {
     color:lighten($ss-blue, 40%);
     text-transform:uppercase;
@@ -380,13 +389,24 @@ section {
     border:1px solid rgba(0,0,0,.2);
     min-height:auto;
     border-radius:10px;
+    h3 {
+      font-size:32px;
+      color:lighten($ss-blue, 50%);
+    }
     ul {
       padding-top:20px;
-      li {margin-bottom:1em;}
+      margin:0;
+      padding:0;
+      text-align:center;
+      li {
+        margin-bottom:1em;
+        list-style:none;
+      }
     }
   }
   .btn {
     margin-bottom:60px;
+    font-size:16px;
   }
 
 }
