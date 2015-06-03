@@ -37,10 +37,8 @@ class ApplicationController < ActionController::Base
   end
 
   def load_videos_home
-
     @main_videos = Refinery::Videos::Video.all
     @home_video_hero = @main_videos.sample
-
   end
 
   def load_more_videos

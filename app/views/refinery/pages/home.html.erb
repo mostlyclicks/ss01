@@ -273,6 +273,44 @@
 
 
 
+
+
+
+
+<section id="home-videos">
+  <div class="container">
+    <div class="row">
+      <%# @home_video_hero.each do |v| %>
+      <div class="col-md-3">
+        <h1>Videos</h1>
+          <h2><%= @home_video_hero.title %></h2>
+          <p><%= @home_video_hero.description.html_safe %></p>
+      </div>
+        <div class="col-md-9">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= @home_video_hero.embed_url %>"></iframe>
+          </div>
+        </div>
+      <%# end %>
+    </div>
+    <div class="row home-video-sub">
+      <% @home_videos.each do |hv| %>
+      <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= hv.embed_url %>"></iframe>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <%= link_to 'SEE MORE VIDEOS', '/videos', class: 'btn btn-lg btn-primary' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="home-blog">
   <div class="container">
     <div class="row">
@@ -320,40 +358,6 @@
   </div>
 </section>
 
-
-
-<section id="home-videos">
-  <div class="container">
-    <div class="row">
-      <%# @home_video_hero.each do |v| %>
-      <div class="col-md-3">
-        <h1>Videos</h1>
-          <h2><%= @home_video_hero.title %></h2>
-          <p><%= @home_video_hero.description.html_safe %></p>
-      </div>
-        <div class="col-md-9">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="<%= @home_video_hero.embed_url %>"></iframe>
-          </div>
-        </div>
-      <%# end %>
-    </div>
-    <div class="row home-video-sub">
-      <% @home_videos.each do |hv| %>
-      <div class="col-sm-4">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="<%= hv.embed_url %>"></iframe>
-        </div>
-      </div>
-      <% end %>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <%= link_to 'SEE MORE VIDEOS', '/videos', class: 'btn btn-lg btn-primary' %>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section id="home-the-team">
