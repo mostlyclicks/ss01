@@ -32,8 +32,14 @@ class ApplicationController < ActionController::Base
     @home_blog = Refinery::Blog::Post.limit(3)
   end
 
+  def load_videos
+    @videos = Refinery::Videos::Video.all
+  end
+
   def load_videos_home
-    @home_video_hero = Refinery::Videos::Video.first
+
+    @main_videos = Refinery::Videos::Video.all
+    @home_video_hero = @main_videos.sample
 
   end
 
@@ -41,9 +47,7 @@ class ApplicationController < ActionController::Base
     @home_videos = Refinery::Videos::Video.limit(10)
   end
 
-  def load_videos
-    @videos = Refinery::Videos::Video.all
-  end
+
 
   def load_contributors
     @contributors = Refinery::Contributors::Contributor.all

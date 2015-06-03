@@ -324,70 +324,6 @@
 
 <section id="home-videos">
   <div class="container">
-    <!-- <div class="row">
-      <% @home_videos.each do |v| %>
-
-            <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="<%#= v.embed_url %>"></iframe>
-        </div>
-        <% end %>
-
-    </div> -->
-
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 ">
-
-
-  <div id="carousel-vid" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <% @home_videos.each_with_index do |v, index| %>
-      <li data-target="#carousel-vid" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
-    <% end %>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  
-  <div class="carousel-inner" role="listbox" id="video">
-    <% @home_videos.each_with_index do |v, index| %>
-    
-    
-      <div class="item <% if index == 0 %>active<% end %> text-center">
-        
-        <div class="col-sm-12">
-        <h3 class="text-left"><%= v.title %></h3>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="<%= v.embed_url %>"></iframe>
-        </div>
-      </div>
-      </div>
-    <% end %>
-  </div>
-  
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-vid" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-vid" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-</div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- 
-<section id="home-videos">
-  <div class="container">
     <div class="row">
       <%# @home_video_hero.each do |v| %>
       <div class="col-md-3">
@@ -418,7 +354,7 @@
     </div>
   </div>
 </section>
- -->
+
 
 <section id="home-the-team">
   
