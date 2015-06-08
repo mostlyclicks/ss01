@@ -1,0 +1,13 @@
+<section id="contributors">
+  <div class="container-fluid">
+    <h1>Contributors</h1>
+    <div class="row">
+      <% @contributors.each do |c| %>
+        <div class="col-md-3">
+          <h3><%= c.name %></h3>
+          <%= c.description.html_safe %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+<section id="home-videos">
+  <div class="container">
+    <div class="row">
+      <%# @home_video_hero.each do |v| %>
+      <div class="col-md-3">
+        <h1>Videos</h1>
+          <h2><%= @home_video_hero.title %></h2>
+          <p><%= @home_video_hero.description.html_safe %></p>
+      </div>
+        <div class="col-md-9">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= @home_video_hero.embed_url %>"></iframe>
+          </div>
+        </div>
+      <%# end %>
+    </div>
+    <div class="row home-video-sub">
+      <% @home_videos.each do |hv| %>
+      <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= hv.embed_url %>"></iframe>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <%= link_to 'SEE MORE VIDEOS', '/videos', class: 'btn btn-lg btn-primary' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="home-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 ">
+
+
+  <div id="carousel-blog" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @home_blog.each_with_index do |b, index| %>
+      <li data-target="#carousel-blog" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  
+  <div class="carousel-inner" role="listbox">
+    <% @home_blog.each_with_index do |b, index| %>
+    
+      <div class="item <% if index == 0 %>active<% end %> text-center">
+        <a href="<%= blog_post_path(b) %>"><h1 class="text-left"><%= b.title %></h1></a>
+        <%= b.custom_teaser.html_safe %> 
+        <%= link_to 'Read more', blog_post_path(b), class: 'btn btn-primary btn-lg' %>
+      </div>
+    
+    <% end %>
+  </div>
+  
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-blog" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-blog" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+</div>
+
+    </div>
+  </div>
+</section>
