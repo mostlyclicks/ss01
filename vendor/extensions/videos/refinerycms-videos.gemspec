@@ -3,6 +3,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-videos'
+  s.author            = 'mc'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Videos extension for Refinery CMS'
   s.date              = '2015-03-19'
