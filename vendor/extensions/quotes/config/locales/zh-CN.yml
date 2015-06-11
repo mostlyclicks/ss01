@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      quotes:
+        title: Quotes
+    quotes:
+      admin:
+        quotes:
+          actions:
+            create_new: 建立新的 Quote
+            reorder: 对 Quotes 重新排序
+            reorder_done: 对 Quotes 的重新排序结束
+          records:
+            title: Quotes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Quotes yet. Click "Add New Quote" to add your first quote.
+            no_items_yet: 目前没有 Quotes . 点击 "Add New Quote" 创建一个quote.
+          quote:
+            view_live_html: 查看 quote 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 quote
+            delete: 永久删除 quote
+      quotes:
+        show:
+          other: 其他 Quotes
+  activerecord:
+    attributes:
+      'refinery/quotes/quote':
+        name: Name
+        quote_text: Quote Text

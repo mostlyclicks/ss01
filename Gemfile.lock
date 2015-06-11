@@ -16,6 +16,8 @@ PATH
     refinerycms-online_conferences (1.0)
       refinerycms-core (~> 2.1.5)
       refinerycms-settings (~> 2.1.0)
+    refinerycms-quotes (1.0)
+      refinerycms-core (~> 2.1.5)
     refinerycms-sep_inquiries (1.0)
       refinerycms-core (~> 2.1.5)
       refinerycms-settings (~> 2.1.0)
@@ -350,6 +352,7 @@ DEPENDENCIES
   refinerycms-inquiries (~> 2.1.0)
   refinerycms-online_conferences!
   refinerycms-page-images (~> 2.1.0)
+  refinerycms-quotes!
   refinerycms-sep_inquiries!
   refinerycms-team_members!
   refinerycms-videos!

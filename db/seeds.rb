@@ -30,3 +30,6 @@ Refinery::Contributors::Engine.load_seed
 
 # Added by Refinery CMS TeamMembers extension
 Refinery::TeamMembers::Engine.load_seed
+
+# Added by Refinery CMS Quotes extension
+Refinery::Quotes::Engine.load_seed

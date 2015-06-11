@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      quotes:
+        title: Quotes
+    quotes:
+      admin:
+        quotes:
+          actions:
+            create_new: Nieuwe Quote toevoegen
+            reorder: De volgorde van de Quotes wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Quote-volgorde
+          records:
+            title: Quotes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Quotes. Druk op 'Nieuwe Quote toevoegen' om de eerste toe te voegen.
+          quote:
+            view_live_html: Deze quote op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze quote
+            delete: Deze quote definitief verwijderen
+      quotes:
+        show:
+          other: Andere Quotes
+  activerecord:
+    attributes:
+      'refinery/quotes/quote':
+        name: Name
+        quote_text: Quote Text

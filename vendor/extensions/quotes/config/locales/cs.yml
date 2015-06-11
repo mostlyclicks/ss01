@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      quotes:
+        title: Quotes
+    quotes:
+      admin:
+        quotes:
+          actions:
+            create_new: Přidat Quote
+            reorder: Řadit Quotes
+            reorder_done: Konec řazení Quotes
+          records:
+            title: Quotes
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Quotes. Zvolte "Přidat Quote" pro přidání prvního quote.
+          quote:
+            view_live_html: Zobrazit náhled quote<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit quote
+            delete: Smazat quote
+      quotes:
+        show:
+          other: Další Quotes
+  activerecord:
+    attributes:
+      'refinery/quotes/quote':
+        name: Name
+        quote_text: Quote Text

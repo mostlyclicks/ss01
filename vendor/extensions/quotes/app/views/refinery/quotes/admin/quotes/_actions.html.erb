@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Quotes::Admin::QuotesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.quotes_admin_quotes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_quotes_admin_quote_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Quotes::Admin::QuotesController.sortable? && ::Refinery::Quotes::Quote.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Quotes"),
+                 refinery.quotes_admin_quotes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Quotes"),
+                 refinery.quotes_admin_quotes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

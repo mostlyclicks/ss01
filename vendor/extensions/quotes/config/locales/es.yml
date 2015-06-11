@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      quotes:
+        title: Quotes
+#        article: masculino/femenino
+    quotes:
+      admin:
+        quotes:
+          actions:
+            create_new: Crear nuevo quote
+            reorder: Reordenar quotes
+            reorder_done: Reordenación de quotes completada
+          records:
+            title: Quotes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay quotes todavía. Pulsa en "Crear nuevo Quote" para crear tu primer quote.
+          quote:
+            view_live_html: Ver este quote como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este quote
+            delete: Borrar este quote para siempre
+      quotes:
+        show:
+          other: Otros quotes
+  activerecord:
+    attributes:
+      'refinery/quotes/quote':
+        name: Name
+        quote_text: Quote Text

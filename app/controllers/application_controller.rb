@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_athletes, :load_home_athletes, :load_blog_posts, :load_videos_home, :load_more_videos
   before_filter :load_contributors
   before_filter :load_team_members
+  before_filter :load_quotes
 
   protected
 
@@ -60,6 +61,10 @@ class ApplicationController < ActionController::Base
         @derek = x
       end
     end
+  end
+
+  def load_quotes
+    @quotes = Refinery::Quotes::Quote.all
   end
 
 

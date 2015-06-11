@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      quotes:
+        title: Quotes
+    quotes:
+      admin:
+        quotes:
+          actions:
+            create_new: Add New Quote
+            reorder: Reorder Quotes
+            reorder_done: Done Reordering Quotes
+          records:
+            title: Quotes
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Quotes yet. Click "Add New Quote" to add your first quote.
+          quote:
+            view_live_html: View this quote live <br/><em>(opens in a new window)</em>
+            edit: Edit this quote
+            delete: Remove this quote forever
+      quotes:
+        show:
+          other: Other Quotes
+  activerecord:
+    attributes:
+      'refinery/quotes/quote':
+        name: Name
+        quote_text: Quote Text

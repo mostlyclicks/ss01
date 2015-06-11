@@ -5,19 +5,25 @@
       <div id="about-quotes-carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#about-quotes-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#about-quotes-carousel" data-slide-to="1"></li>
-          <li data-target="#about-quotes-carousel" data-slide-to="2"></li>
-          <li data-target="#about-quotes-carousel" data-slide-to="3"></li>
+          <% @quotes.each_with_index do |q, index| %>
+            <li data-target="#about-quotes-carousel" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+          <% end %>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
+          <% @quotes.each_with_index do |q, index| %>
+            <div class="item <% if index == 0 %>active<% end %>">
+              <h2><%= q.name %></h2>
+              <%= q.quote_text.html_safe %>
+            </div>
+          <% end %>
+
+
+
+<!--           <div class="item active">
             <h2>Deniz Hekmati, Founder</h2>
             <blockquote>“In my eyes, smart training is imperative and intertwined with hard work. I have spent over 70% of my life contributing to the sport of swimming and I will continue as long as there is a need. I apply my own fighting story to a relevant graduate level education in order to find the most efficient formula for elevated performance on a consistent basis. As a former collegiate athlete who understands the aquatic sports, I have an obligation to pass on my knowledge and experience to help as many individuals out there as I possibly can.”</blockquote>
-
-            
           </div>
           <div class="item">
             <h2>Jesper Akesson, Co-Owner</h2>
@@ -33,7 +39,7 @@
             <h2>Björn Gunnarsson, Co-Owner</h2>
             <blockquote>“During my swimming career, I experienced a lack of individualized dryland programs that were adapted to swimming. Flexibility issues limited my strength in the water, so now I want to provide passionate swimmers with reliable knowledge to help them swim fast.”</blockquote>
             
-          </div>
+          </div> -->
           
         </div>
 
