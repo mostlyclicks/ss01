@@ -27,3 +27,6 @@ Refinery::OnlineConferences::Engine.load_seed
 
 # Added by Refinery CMS Contributors extension
 Refinery::Contributors::Engine.load_seed
+
+# Added by Refinery CMS TeamMembers extension
+Refinery::TeamMembers::Engine.load_seed

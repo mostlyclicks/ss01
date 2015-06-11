@@ -13,6 +13,7 @@ gem "sass", "~> 3.2.19"
 gem 'sass-rails',   '~> 3.2.3'
 gem 'puma'
 gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
+gem 'nokogiri', '1.6.5'
 
 
 # Gems used only for assets and not required
@@ -40,3 +41,4 @@ gem 'refinerycms-videos', :path => 'vendor/extensions'
 gem 'refinerycms-sep_inquiries', :path => 'vendor/extensions'
 gem 'refinerycms-online_conferences', :path => 'vendor/extensions'
 gem 'refinerycms-contributors', :path => 'vendor/extensions'
+gem 'refinerycms-team_members', :path => 'vendor/extensions'

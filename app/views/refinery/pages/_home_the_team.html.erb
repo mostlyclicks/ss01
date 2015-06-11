@@ -8,29 +8,28 @@
     </div>
     <div class="row">
       <div class="col-md-4 col-sm-6 text-center team">
-        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Alex – a 2012 London Olympian, Pac-12 champion, and NCAA Division I All-American in the 200-yard butterfly– is Swimmer Strength’s Romanian powerhouse. He was a collegiate student-athlete at both the University of Alabama and Arizona State University and is currently continuing his journey towards the 2016 Rio Olympic Games while pursuing a degree in film media production.">Alex Coci</button></h2>
-        <small>Co-Owner, Media Production Director</small>
+        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<%= @alex.description.html_safe %>"><%= @alex.name %></button></h2>
+        <small><%= @alex.title %></small>
       </div>
       <div class="col-md-4 col-sm-6 col-md-offset-4 text-center team">
-        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="With a background in economics and international studies, Björn brings a strong academic and athletic expertise to the table, . As a 2005 Youth Olympian and Junior National Team Member for Sweden, this former University of Utah student-athlete set eight school records and was a Pac-12 finalist. Björn knows what it takes to compete and succeed on the highest level, ensuring quality work from start to finish.">Björn Gunnarsson</button></h2>
-        <small>Co-Owner, Director of Operations</small>
+        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<%= @bjorn.description %>"><%= @bjorn.name %></button></h2>
+        <small><%= @bjorn.title %></small>
       </div>
     </div>
     <div class="row">
-      <% @text = "<p class='text-center'>Deniz currently serves as the strength coach for the University of Utah Swimming and Diving team while pursuing his master’s in exercise physiology and sport psychology. A former Arizona State University varsity swimmer and junior national team member for Sweden and Turkey, Deniz is committed to helping high-performance swimmers around the world to gain a competitive edge through comprehensive and individualized training.</p>" %>
       <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-4 text-center team">
-        <h2><button data-container="body" class="popover-with-html" data-toggle="popover" data-placement="bottom" data-content="<%= @text.html_safe %>">Deniz Hekmati</button></h2>
-        <small>Founder, Strength and Conditioning Specialist</small>
+        <h2><button data-container="body" class="popover-with-html" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<%= @deniz.description.html_safe %>"><%= @deniz.name %></button></h2>
+        <small><%= @deniz.title %></small>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4 col-sm-6 text-center team">
-        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Jesper is a living example of international experience. Born and raised in Sweden, he led the Arizona State University swim team as a captain and participated at the 2011 World University Games in Shenzhen, China as a member of the Swedish National team. He earned his degree in business communications with an international business certificate.">Jesper Akesson</button></h2>
-        <small>Co-Owner, Director of Communications</small>
+        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<%= @jesper.description.html_safe %>"><%= @jesper.name %></button></h2>
+        <small><%= @jesper.title %></small>
       </div>
       <div class="col-md-4 col-sm-6 col-md-offset-4 text-center team">
-        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="As a fellow sun-devil for Alex, Deniz, and Jesper, Derek earned his degree in accounting and finance. His exceptional work ethic keeps Swimmer Strength on the right path.">Derek Knittle</button></h2>
-        <small>Head of Finances</small>
+        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<%= @derek.description.html_safe %>"><%= @derek.name %></button></h2>
+        <small><%= @derek.title %></small>
       </div>
     </div>
   </div>

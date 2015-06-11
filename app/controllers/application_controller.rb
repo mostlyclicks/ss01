@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   before_filter :load_athletes, :load_home_athletes, :load_blog_posts, :load_videos_home, :load_more_videos
   before_filter :load_contributors
+  before_filter :load_team_members
 
   protected
 
@@ -43,6 +44,22 @@ class ApplicationController < ActionController::Base
 
   def load_more_videos
     @home_videos = Refinery::Videos::Video.limit(10)
+  end
+
+  def load_team_members
+    Refinery::TeamMembers::TeamMember.all.each do |x|
+      if x.name == 'Alex Coci'
+        @alex = x
+       elsif x.title == 'Co-Owner, Director of Operations'
+         @bjorn = x
+      elsif x.name == "Deniz Hekmati"
+        @deniz = x
+      elsif x.name == "Jesper Akesson"
+        @jesper = x  
+      elsif x.name == "Derek Knittle"
+        @derek = x
+      end
+    end
   end
 
 

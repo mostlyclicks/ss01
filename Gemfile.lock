@@ -19,6 +19,8 @@ PATH
     refinerycms-sep_inquiries (1.0)
       refinerycms-core (~> 2.1.5)
       refinerycms-settings (~> 2.1.0)
+    refinerycms-team_members (1.0)
+      refinerycms-core (~> 2.1.5)
     refinerycms-videos (1.0)
       refinerycms-core (~> 2.1.5)
 
@@ -196,7 +198,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
-    nokogiri (1.6.6.2)
+    nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pg (0.18.2)
@@ -335,6 +337,7 @@ DEPENDENCIES
   fog
   gibbon!
   jquery-rails
+  nokogiri (= 1.6.5)
   pg
   puma
   rails (= 3.2.18)
@@ -348,6 +351,7 @@ DEPENDENCIES
   refinerycms-online_conferences!
   refinerycms-page-images (~> 2.1.0)
   refinerycms-sep_inquiries!
+  refinerycms-team_members!
   refinerycms-videos!
   sass (~> 3.2.19)
   sass-rails (~> 3.2.3)
