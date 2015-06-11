@@ -37,7 +37,15 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('[data-toggle="popover"]').popover({ trigger: "hover" })
+  $('[data-toggle="popover"]').popover({ trigger: "hover" });
+  
+
+})
+
+$(document).ready(function () {
+  
+  $('.popover-with-html').popover({ html : true });
+
 })
 
 

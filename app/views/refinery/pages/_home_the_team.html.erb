@@ -17,8 +17,9 @@
       </div>
     </div>
     <div class="row">
+      <% @text = "<p class='text-center'>Deniz currently serves as the strength coach for the University of Utah Swimming and Diving team while pursuing his master’s in exercise physiology and sport psychology. A former Arizona State University varsity swimmer and junior national team member for Sweden and Turkey, Deniz is committed to helping high-performance swimmers around the world to gain a competitive edge through comprehensive and individualized training.</p>" %>
       <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-4 text-center team">
-        <h2><button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Deniz currently serves as the strength coach for the University of Utah Swimming and Diving team while pursuing his master’s in exercise physiology and sport psychology. A former Arizona State University varsity swimmer and junior national team member for Sweden and Turkey, Deniz is committed to helping high-performance swimmers around the world to gain a competitive edge through comprehensive and individualized training.">Deniz Hekmati</button></h2>
+        <h2><button data-container="body" class="popover-with-html" data-toggle="popover" data-placement="bottom" data-content="<%= @text.html_safe %>">Deniz Hekmati</button></h2>
         <small>Founder, Strength and Conditioning Specialist</small>
       </div>
     </div>
