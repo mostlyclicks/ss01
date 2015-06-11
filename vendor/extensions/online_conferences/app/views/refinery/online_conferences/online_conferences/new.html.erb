@@ -26,10 +26,25 @@
         <div class="col-sm-9"><%= f.text_field :email %></div>
       </div>
 
+
+
+
       <div class='field inquiry_from_field string_field form-group'>
         <%= f.required_label :inquiry_from, class: 'control-label col-sm-3 text-left' %>
-        <div class="col-sm-9"><%= f.text_field :inquiry_from, class: 'form-control'  %></div>
+        <div class="col-sm-9">
+          <% Refinery::OnlineConferences::OnlineConference::INQUIRY_FROM.each do |value, name| %>
+                  <%= f.radio_button :inquiry_from, (name || value), :value => value %>
+                  <%= f.label :"inquiry_from_#{(name || value)}", value.humanize %><br />
+                <% end %>
+
+
+
+          <%#= f.text_field :inquiry_from, class: 'form-control'  %></div>
       </div>
+
+
+
+
 
       <div class='field topic_one_field string_field form-group'>
         <%= f.required_label :topic_one, class: 'control-label col-sm-3 text-left' %>

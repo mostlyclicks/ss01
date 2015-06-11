@@ -17,6 +17,8 @@ module Refinery
       validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
       validates :inquiry_from, :presence => true
       validates :topic_one, :presence => true
+
+      INQUIRY_FROM = ["Coach", "Athlete", "Parent"]
     end
   end
 end
