@@ -17,6 +17,63 @@ end
 
 module Ss01
   class Application < Rails::Application
+
+    require 'rack/rewrite'
+
+    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+      # example rewrites
+      # rewrite '/wiki/John_Trupiano', '/john'
+      
+      r301 '/about/', '/#home-about'
+      r301 '/athletes/', '/'
+      r301 '/video/', '/#home-videos'
+      r301 '/blog/', '/#home-blog'
+      r301 '/contact/', '/#home-contact'
+
+      r301 '/video/plank-reach', '/#home-videos'
+      r301 '/video/superman-pike', '/#home-videos'
+      r301 '/video/1-arm-sb-chest-press-wrotation-pull', '/#home-videos'
+      r301 '/video/low-back-lateral-stretch', '/#home-videos'
+      r301 '/video/thoracic-rotational-mobility', '/#home-videos'
+      r301 '/video/the-evolution-of-athletes', '/#home-videos'
+      r301 '/video/sb-streamline-balance', '/#home-videos'
+      r301 '/video/trx-angels', '/#home-videos'
+      r301 '/video/trx-trunk-rotation', '/#home-videos'
+      r301 '/video/trx-hip-lift-to-curl', '/#home-videos'
+      r301 '/video/depth-jump', '/#home-videos'
+      r301 '/video/dead-bug', '/#home-videos'
+      r301 '/video/1-arm-pullover', '/#home-videos'
+      r301 '/video/trx-gator-chop', '/#home-videos'
+      r301 '/video/inside-a-champions-head', '/#home-videos'
+      r301 '/video/set-your-goals-for-2014-it-begins-now', '/#home-videos'
+      r301 '/video/swimmer-strength-website-opening-trailer', '/#home-videos'
+
+      r301 '/blog/why-the-6-pack-should-not-be-your-goal',      '/blog/posts/why-the-6-pack-should-not-be-your-goal' 
+      r301 '/blog/swimmers-shoulder-part-3',                    '/blog/posts/swimmer-s-shoulder-part-3'     
+      r301 '/blog/swimmers-shoulder-part-2',                    '/blog/posts/swimmer-s-shoulder-part-2' 
+      r301 '/blog/swimmers-shoulder-part-1',                    '/blog/posts/swimmer-s-shoulder-part-1'
+      r301 '/blog/force-vs-power-for-swimmers',                 '/blog/posts/force-vs-power-for-swimmers'
+      r301 '/blog/new-season-new-goals',                        '/blog/posts/new-season-new-goals'
+      r301 '/blog/swim-faster',                                 '/blog/posts/swim-faster'
+      r301 '/blog/test-retest',                                 '/blog/posts/test-retest'    
+      r301 '/blog/the-upcoming-book',                           '/blog/posts/the-upcoming-book' 
+      r301 '/blog/crossfit-for-performance',                    '/blog/posts/crossfit-for-performance'
+      r301 '/blog/the-good-to-knows',                           '/blog/posts/the-good-to-knows'
+      r301 '/blog/stretching-effects-on-recovery',              '/blog/posts/stretching-effects-on-recovery'
+      r301 '/blog/swimming-for-optimal-results',                '/blog/posts/swimming-for-optimal-results'
+      r301 '/blog/strength-training-for-swimmers',              '/blog/posts/strength-training-for-swimmers' 
+      r301 '/blog/straight-arm-plank-wrow',                     '/blog/posts/straight-arm-plank-wrow'    
+      r301 '/blog/kinetic-chain',                               '/blog/posts/kinetic-chain' 
+      r301 '/blog/advanced-inverted-row',                       '/blog/posts/advanced-inverted-row'
+      r301 '/blog/functional-training-what-is-it',              '/blog/posts/functional-training-what-is-it'
+      r301 '/blog/integrated-strength-training',                '/blog/posts/integrated-strength-training' 
+      r301 '/blog/start-turn-performances',                     '/blog/posts/start-turn-performances'
+      r301 '/blog/functional-training',                         '/blog/posts/functional-training' 
+      r301 '/blog/complex-movements',                           '/blog/posts/complex-movements' 
+
+    end
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

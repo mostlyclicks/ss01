@@ -14,6 +14,7 @@ gem 'sass-rails',   '~> 3.2.3'
 gem 'puma'
 gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 gem 'nokogiri', '1.6.5'
+gem 'rack-rewrite'
 
 
 # Gems used only for assets and not required
