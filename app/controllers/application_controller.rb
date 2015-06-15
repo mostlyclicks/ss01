@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_contributors
   before_filter :load_team_members
   before_filter :load_quotes
+  before_filter :load_videos
 
   protected
 

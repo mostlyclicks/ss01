@@ -1,7 +1,57 @@
 <section id="video-main">
   <div class='container'>
-    <div></div>
+    <div class="col-sm-12">
+      <h1>Videos</h1>
+    </div>
 
   </div>
 </section>
-<section id="video-grid"></section>
+
+
+
+
+
+
+<section id="video-grid">
+  <div class="container">
+    <div class="row">
+      <% @videos.each do |v| %>
+        <div class="col-sm-6">
+          <h4><%= v.title %></h4>
+          <div class="embed-responsive embed-responsive-16by9 videos">
+            <iframe class="embed-responsive-item"  id="yt-player" src="<%= v.embed_url %>"></iframe>
+          </div>
+
+          <!-- <a href="" data-toggle="modal" data-target="#myModal">Hello</a>
+
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title"><%= v.title %></h4>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"  id="yt-player" src="<%= v.embed_url %>"></iframe>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div><!- /.modal-content 
+            </div>
+          </div>
+          -->
+
+
+
+
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+
+</section>

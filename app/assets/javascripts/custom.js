@@ -48,6 +48,13 @@ $(document).ready(function () {
 
 })
 
+$(document).ready(function (){
+  $('#yt-player').bind('hide', function () {
+  $('#yt-player').find('iframe').attr('src', '');
+});
+
+})
+
 
 //Youtube video
 
