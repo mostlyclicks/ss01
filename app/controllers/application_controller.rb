@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_blog_posts
-    @home_blog = Refinery::Blog::Post.limit(3)
+    @home_blog = Refinery::Blog::Post.limit(10)
   end
 
   def load_videos
@@ -44,7 +44,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_more_videos
-    @home_videos = Refinery::Videos::Video.limit(10)
+    @home_videos = Refinery::Videos::Video.limit(3)
   end
 
   def load_team_members

@@ -22,7 +22,7 @@ module Refinery
       validates :country, :presence => true
       validates :contact_time_1, :presence => true
       validates :area_of_focus, :presence => true
-      validates :event_times, :presence => true
+      #validates :event_times, :presence => true
       validates :athletic_background, :presence => true
       validates :athletic_vision, :presence => true
 

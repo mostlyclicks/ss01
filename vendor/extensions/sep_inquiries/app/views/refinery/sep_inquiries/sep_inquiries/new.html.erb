@@ -99,35 +99,37 @@
     <div class="col-md-6">
     
       <h3>Performance Information</h3>
-
-    
-          <div class='field area_of_focus_field text_field form-group'>
-            <%#= f.required_label :area_of_focus, :name => 'Hey focus' %>
-            <label class="required" for="sep_inquiry_area_of_focus">In a few words, please describe your area of focus: *</label>
-            
-            <%= f.text_area :area_of_focus, :rows => 6, class: 'form-control' %>
-          </div>
-    
-          <div class='field event_times_field text_field form-group'>
+<!--           <div class='field event_times_field text_field form-group'>
             <%#= f.required_label :event_times %>
             <label class="required" for="sep_inquiry_event_times">List your top times and dates achieved: *</label>
-            <!-- , 'List your top times and dates achieved:' -->
-            <%= f.text_area :event_times, :rows => 6, class: 'form-control'  %>
-          </div>
+            , 'List your top times and dates achieved:' 
+            <%#= f.text_area :event_times, :rows => 6, class: 'form-control'  %>
+          </div> -->
     
           <div class='field athletic_background_field text_field form-group'>
             <%#= f.required_label :athletic_background %>
-            <label class="required" for="sep_inquiry_athletic_background">Briefly describe your athletic background: *</label>
+            <label class="required" for="sep_inquiry_athletic_background">In a paragraph, please describe subject's necessary (if any) athletic background. *</label>
             <!-- , 'Briefly describe your athletic background:'  -->
             <%= f.text_area :athletic_background, :rows => 6, class: 'form-control'  %>
           </div>
     
           <div class='field athletic_vision_field text_field form-group'>
             <%#= f.required_label :athletic_vision %>
-            <label class="required" for="sep_inquiry_athletic_vision">In a few words, tell us your vision as an athlete: *</label>
+            <label class="required" for="sep_inquiry_athletic_vision">In a few words, please describe subject's athletic vision. *</label>
             <!-- , 'In a few words, tell us your vision as an athlete:'  -->
             <%= f.text_area :athletic_vision, :rows => 6, class: 'form-control'  %>
-          </div></div>
+          </div>
+
+          <div class='field area_of_focus_field text_field form-group'>
+            <%#= f.required_label :area_of_focus, :name => 'Hey focus' %>
+            <label class="required" for="sep_inquiry_area_of_focus">Please state the main area(s) of improvement subject(s) can utilize the most. *</label>
+            
+            <%= f.text_area :area_of_focus, :rows => 6, class: 'form-control' %>
+          </div>
+
+
+
+        </div>
 
       <div class="col-md-12 text-center submit-div">
         <div class='actions'>
