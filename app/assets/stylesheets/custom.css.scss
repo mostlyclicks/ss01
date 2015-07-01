@@ -81,7 +81,7 @@ section {
  width:175px;
  height:208px;
  z-index:10000;
- background-image:url(signupbug.png);
+ background-image:url(signupbug-2.png);
  /*border:1px solid rgba(0,0,0,.1);*/
 }
 
@@ -331,7 +331,7 @@ section {
   background-image: url(SYD_0794-Edit-blog.jpg);
   background-size:cover ;
 
-  h1 {color:lighten($ss-blue, 10%);font-size:2em;}
+  h1 {color:lighten($ss-blue, 10%);font-size:2.25em;text-align:center;}
   padding:140px 20px;
   background-color:lighten($ss-blue, 45%);
   min-height:650px;

@@ -25,7 +25,7 @@
               <% end %>
             </div>
             <div class="col-sm-7">
-              <a href="<%= blog_post_path(b) %>"><h1 class="text-left"><%= b.title %></h1></a>
+              <a href="<%= blog_post_path(b) %>"><h1 class="text-center"><%= b.title %></h1></a>
               <%= b.custom_teaser.html_safe %> 
               <%= link_to 'Read more', blog_post_path(b), class: 'btn btn-primary btn-lg' %>
             </div>
